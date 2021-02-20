@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar should render correctly inside button: button 1`] = `
+.c0 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+<h2
+  class="c0"
+>
+  Wizevideo
+</h2>
+`;

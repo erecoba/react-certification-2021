@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar should render correctly inside button: main 1`] = `"DIV"`;
+
+exports[`Avatar should render correctly inside button: nav 1`] = `"DIV"`;

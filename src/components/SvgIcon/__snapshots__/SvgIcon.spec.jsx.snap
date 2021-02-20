@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SvgIcon should render correctly with svg: svg 1`] = `"DIV"`;

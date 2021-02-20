@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src --ext .js,.jsx",
-    "lint:fix": "eslint ./src --ext .js,.jsx --fix"
+    "lint:fix": "eslint ./src --ext .js,.jsx --fix",
+    "test:unit": "npm test -- --coverage --watchAll"
   },
   "devDependencies": {
     "eslint-config-airbnb": "^18.2.0",
@@ -59,5 +60,11 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/**"
+    ]
   }
 }
