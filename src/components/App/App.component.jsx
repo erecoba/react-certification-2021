@@ -2,6 +2,7 @@ import React, { useLayoutEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
+import Provider from '../../state/Provider';
 import AuthProvider from '../../providers/Auth';
 import HomePage from '../../pages/Home';
 import LoginPage from '../../pages/Login';
@@ -33,29 +34,31 @@ function App() {
   }, []);
 
   return (
-    <ThemeProvider theme={theme.light}>
-      <BrowserRouter>
-        <AuthProvider>
-          <Layout>
-            <Switch>
-              <Route exact path="/">
-                <HomePage />
-              </Route>
-              <Route exact path="/login">
-                <LoginPage />
-              </Route>
-              <Private exact path="/secret">
-                <SecretPage />
-              </Private>
-              <Route path="*">
-                <NotFound />
-              </Route>
-            </Switch>
-            <Fortune />
-          </Layout>
-        </AuthProvider>
-      </BrowserRouter>
-    </ThemeProvider>
+    <Provider>
+      <ThemeProvider theme={theme.light}>
+        <BrowserRouter>
+          <AuthProvider>
+            <Layout>
+              <Switch>
+                <Route exact path="/">
+                  <HomePage />
+                </Route>
+                <Route exact path="/login">
+                  <LoginPage />
+                </Route>
+                <Private exact path="/secret">
+                  <SecretPage />
+                </Private>
+                <Route path="*">
+                  <NotFound />
+                </Route>
+              </Switch>
+              <Fortune />
+            </Layout>
+          </AuthProvider>
+        </BrowserRouter>
+      </ThemeProvider>
+    </Provider>
   );
 }
 
