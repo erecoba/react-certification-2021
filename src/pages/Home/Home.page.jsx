@@ -13,10 +13,10 @@ function HomePage() {
     <>
       <Header />
       <Container>
-        {/* {mock.items.map((video) => ( */}
         {videos.map((video) => (
           <Card
-            key={video.etag}
+            key={video.id}
+            id={video.id}
             title={video.snippet.title}
             description={video.snippet.description}
             imgUrl={video.snippet.thumbnails.medium.url}

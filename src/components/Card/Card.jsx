@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import {
   Container,
   ImageFit,
@@ -8,9 +9,11 @@ import {
   TagChannel,
 } from './Card.styled';
 
-const Card = ({ title, description, imgUrl, channelTitle }) => {
+const Card = ({ id, title, description, imgUrl, channelTitle, isFluid }) => {
+  const history = useHistory();
+
   return (
-    <Container>
+    <Container isFluid={isFluid} onClick={() => history.push(`/videos/${id}`)}>
       <ImageFit src={imgUrl} alt={title} />
       <GradientContainer>
         <Title>{title}</Title>

@@ -1,9 +1,7 @@
 import React, { createContext, useContext, useReducer } from 'react';
 import youtubeReducer, { initialState as youtubeInitialState } from './reducers/youtube';
 
-const YoutubeContext = createContext({
-  videos: [],
-});
+const YoutubeContext = createContext({ ...youtubeInitialState });
 
 const useYoutubeVideo = () => {
   const context = useContext(YoutubeContext);

@@ -1500,3 +1500,909 @@ export const youtubeSearchVideos = async (search) => {
     type: types.YOUTUBE_SEARCH_VIDEOS,
   };
 };
+
+export const youtubeRelatedVideos = async (relatedToVideoId) => {
+  // const response = await YoutubeService.getRelatedVideos(relatedToVideoId);
+  // const relatedVideos = response.result.items;
+
+  const relatedVideos = [
+    {
+      kind: 'youtube#searchResult',
+      etag: 'QQWKtsPM72xAPxJmnKUvNkC71x4',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'tm11yTAXjT4',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'TyjUWzs94brPKtt9np4rC4W_k1I',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'KenzFW6SsFo',
+      },
+      snippet: {
+        publishedAt: '2021-03-11T18:37:52Z',
+        channelId: 'UCxikaEkkXH23Y3smqPBpNJQ',
+        title: 'DOES IT LIVE UP TO THE HYPE??? | NF X HOPSIN "LOST" FIRST REACTION!!',
+        description:
+          'Become a Patreon for exclusive perks and be a direct help to the channel!! https://www.patreon.com/thethirdernest\n\nFOLLOW THE STREAM FAM!! https://www.twitch.tv/thethirdernest\n\nSEE THE GEAR I USE FOR VIDEOS HERE: https://kit.co/thethirdernest\n-----------------------------------------------------------------------------------------------\nDISCORD FOR THE COOL KIDS: https://discord.gg/ycGkz26\n-----------------------------------------------------------------------------------------------\nFOLLOW ME ON SOCIALS!! \nINSTAGRAM: https://www.instagram.com/thethirdernest/\nTWITTER: https://twitter.com/THETHIRDERNEST\n\n#thethirdernest #thethirdfamily #LOST',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/KenzFW6SsFo/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/KenzFW6SsFo/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/KenzFW6SsFo/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/KenzFW6SsFo/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+        },
+        channelTitle: 'TheThirdErnest',
+        liveBroadcastContent: 'none',
+        publishTime: '2021-03-11T18:37:52Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: '9W3RFNbUnni948MgZEH6ZfTtiEk',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'wohkCHvsIVc',
+      },
+      snippet: {
+        publishedAt: '2020-04-24T15:08:57Z',
+        channelId: 'UCE1iUpGXs2ejarZLVjMBveg',
+        title: 'Eminem feat. NF - Only',
+        description:
+          'NF & Eminem - Only | 2020 Music Video | New Sad Emotional Song of NF and Eminem | Inspired by Godzilla and Darkness\n\nMusic Video by Swirve\nhttps://www.youtube.com/swirvemixes\n\nInspired by\nEminem: Godzilla ft. Juice World, Darkness (Official Videos)\nNF: Paid My Dues, When I Grow Up, The Search, Time, Leave Me Alone (Official Videos)\n\nSupport Eminem\nFacebook: https://www.facebook.com/eminem/\nInstagram: https://www.instagram.com/eminem/\n\nSupport NF\nFacebook: https://www.facebook.com/nfrealmusic/\nInstagram: https://www.instagram.com/nfrealmusic/\n\nThis is a Sad Song by Eminem and NF.',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/wohkCHvsIVc/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/wohkCHvsIVc/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/wohkCHvsIVc/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/wohkCHvsIVc/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/wohkCHvsIVc/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'Thug Life Music',
+        liveBroadcastContent: 'none',
+        publishTime: '2020-04-24T15:08:57Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'gyXYN1Kq4qLI3-ebe98uFg3MYMs',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'Hzib-n4hi5o',
+      },
+      snippet: {
+        publishedAt: '2021-03-11T20:42:05Z',
+        channelId: 'UCCpbrIr6hlIPd2EOTZxVBJw',
+        title: 'RAPPER REACTS to NF - LOST ft. Hopsin',
+        description:
+          "Install Raid for Free ✅ IOS: https://clcr.me/kSJ9OI  ✅ ANDROID: https://clcr.me/b9VAq1   \n✅ PC: https://clcr.me/D3pgTh  and get a special starter pack 💥Available only for the next 30 days!\n\nI did my best to record with a setup that I'm not use to! Hope you guys enjoyed the reaction. I'm just unbelievably happy that NF and Hopsin have finally made a song together.\n\n►Features: https://www.indieamplify.com/product/feature-crypt/\n\n►Business Inquiries: cryptbusinessllc@gmail.com\n\n►Sports Channel: https://www.youtube.com/channel/UCwX3_mpYFKOJREdnOHD16LQ\n\n►Podcast Channel: https://www.youtube.com/channel/UC7sFMMoM89vgcgDOUG9XMxQ\n\n► Merch: https://www.crypttherapper.com/shop\n\n► Instagram: https://instagram.com/CryptTheRapper\n\n► Twitter: https://twitter.com/CryptTheRapper\n\n► Spotify: https://open.spotify.com/artist/1WIHbvNZTybCVHFMbzuGJo\n\n► Facebook: https://www.facebook.com/crypttherapperOG/\n\n► Soundcloud: https://soundcloud.com/crypt-226456644\n\nI'm a fat, white YouTube rapper and damn proud of it. Welcome to the Crypt show.\n\nRAPPER REACTS to NF - LOST ft. Hopsin\n\n#NF #Hopsin #Lost",
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/Hzib-n4hi5o/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/Hzib-n4hi5o/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/Hzib-n4hi5o/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/Hzib-n4hi5o/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/Hzib-n4hi5o/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'Crypt',
+        liveBroadcastContent: 'none',
+        publishTime: '2021-03-11T20:42:05Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'J5kA_Q4QwAvt2G00OSXg7wfXYOo',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'Ykg0fzAC2S4',
+      },
+      snippet: {
+        publishedAt: '2021-03-11T18:53:49Z',
+        channelId: 'UC_62jYuKq0O-K66pjrK5jhQ',
+        title:
+          'Rapper Reacts to NF LOST ft. Hopsin!! | THE BARS IN THIS! (First Ever Reaction)',
+        description:
+          "There are levels to this! Rapper reacts to NF and surprise new song 'Lost' ft. Hopsin. Comment below more reactions you want to see!\n\nOrder my BRAND NEW ALBUM NOW!! (all proceeds directly support the channel)\nhttp://www.knoxhillmusic.com\n\nStream it on all platforms: https://distrokid.com/hyperfollow/knoxhill/chaos-theory-2\n\nThe music video 'U Mad Yet' in the intro: https://youtu.be/h9g-G_57EbY\n\nFollow me on Instagram: http://www.instagram.com/knoxhilldmv\nNew songs on my Twitter: http://www.twitter.com/theknoxhill\nFacebook: http://www.facebook.com/knoxhill\nTik Tok: @knoxhilldmv\n\nSupport the Patreon for exclusive content! http://www.patreon.com/knoxhill\nCome join the Discord and say hello: https://discord.gg/wf8FX6X\n\nFollow my Spotify: http://bit.ly/KnoxHillSpotify\nFollow my Apple Music: http://bit.ly/KnoxHillAppleMusic\n\nSupport independent music: http://bit.ly/SubscribeKnoxHill\n\nLyrics.\n\nLike this vid? Here's more like it:\nMy Song 'Lean On': https://youtu.be/Cf4MTKKIUrE\nEminem Gnat Music Video Reaction:\nhttps://youtu.be/cDsrQ1Swz4I \nBlackpink Lovesick Girls First Ever Reaction: https://youtu.be/HS-U7rngXkI\n\nBTS Official  Mic Drop First Ever Reaction: https://youtu.be/zTsmop6LlZI\nEminem Zeus Reaction: https://youtu.be/j5bR7iD5koM\nEZ Mil Panalo live on the USA Wish Bus: https://youtu.be/XjZDGmsnP8Q\n NF Real Music Intro III Reaction: https://youtu.be/VDK0KrLxS6I\nNF Intro II: https://youtu.be/PQp89meF5BI\nEverything Great About Paid My Dues: https://youtu.be/Of8s9_vcBTI\nRapper Reacts to Mansion: \nhttps://youtu.be/3NrD1aTGgWk\nNF Oh Lord: https://youtu.be/a8opoXN35s8\n\nNF Reaction. NF Lost ft. Hopsin\n @NFVEVO @NFrealmusic  @Hopsintv \n\nDo what you love, or don't do it at all. \n\nBusiness:\nknoxhilldmv@gmail.com\n\nKnox Hill\n\n*Please note that subscriber giveaways are not real and meant for humor and entertainment purposes only. None of the products that are mentioned are physically given away.*\n\n*Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for \"fair use\" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use. No copyright infringement intended. ALL RIGHTS BELONG TO THEIR RESPECTIVE OWNERS*\n\n#NF #Lost #Reaction",
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/Ykg0fzAC2S4/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/Ykg0fzAC2S4/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/Ykg0fzAC2S4/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/Ykg0fzAC2S4/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/Ykg0fzAC2S4/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'Knox Hill',
+        liveBroadcastContent: 'none',
+        publishTime: '2021-03-11T18:53:49Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: '7YAwAwczNm-qI6sxwygu1m3rmo4',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'adLGHcj_fmA',
+      },
+      snippet: {
+        publishedAt: '2021-03-03T22:52:06Z',
+        channelId: 'UCoUM-UJ7rirJYP8CQ0EIaHA',
+        title:
+          'Bruno Mars, Anderson .Paak, Silk Sonic - Leave the Door Open [Official Video]',
+        description:
+          'The official music video for Bruno Mars, Anderson .Paak, Silk Sonic\'s new single "Leave the Door Open"\nDownload/Stream: https://apple.co/38tHKJs\n\nDirected by Bruno Mars and Florent Dechard \nPhil Tayag - creative consultant\n\nLimited Edition Collectible CD Single Available Here: https://smarturl.it/LTDO_CDSINGLE\n\n🔔 Subscribe for the latest official music videos, live performances, lyric videos, official audio, and more: https://Atlantic.lnk.to/BMsubscribe\n \n🎵 Listen to the Best of Bruno Mars playlist ➤ https://bit.ly/3bbslw8\u200b \n🎵 Watch Bruno Mars’ Official Music Videos ➤ https://bit.ly/2U7I3mi\u200b \n\nGet Bruno Mars merchandise! https://brunom.rs/brunomarsstore \n\nConnect with Bruno: \nhttp://www.brunomars.com\u200b \nhttp://www.instagram.com/brunomars\u200b \nhttp://www.twitter.com/brunomars\u200b \nhttp://www.facebook.com/brunomars \n\nConnect with Anderson .Paak.: \nhttps://www.facebook.com/AndersonPaak \nhttps://www.instagram.com/anderson._paak/ \nhttps://twitter.com/AndersonPaak \n\nConnect with Silk Sonic: \nhttps://SilkSonic.lnk.to/Instagram \nhttps://SilkSonic.lnk.to/Twitter \nhttps://SilkSonic.lnk.to/Facebook \nhttps://SilkSonic.lnk.to/Spotify \nhttps://SilkSonic.lnk.to/AppleMusic \nhttps://SilkSonic.lnk.to/TikTok \n\nLyrics: \nWhat you doin\n(what you doin)\n\nWhere you at\n(where you at)\n\nOh you got plans  \n(you got plans)\n\nDon’t say that       \n(shut yo trap)\n\nI’m sippin wine     \n(sip sip)\n\nIn a robe               \n(drip rip)\n\nI look too good    \n(look too good)\n\nTo be alone         \n(wooohooo)\n\nMy house clean  \n(house clean)\n\nMy pool warm   \n(pool warm)\n\nJust shaved        \n(smooth like a new born)\n\nWe should be dancing, romancing\nIn the east wing and the west wing\nOf this mansion, wus happenin\n\nI aint playin no games\nEvery word that I say \nIs coming straight from the heart\n(so if you tryna lay in these arms)\n\nImma leave the door open\n(imma leave the door open)\nImma leave the open girl\n(Imma leave the door open, hopin)\n\nThat you feel the way I feel\nAnd you want me like I want you tonight baby\n(tell me that you’re coming through)\n\nYou’re so sweet \n(so sweet)\n\nSo tight\n(so tight)\n\nI won’t bite\n(ahh ahh)\n\nUnless you like\n(unless you like)\n\nIf you smoke\n(what you smoke)\n\nI got that haze\n(purple haze)\n\nAnd if you’re hungry girl I got filets\n(woohooo)\n\nOoh baby don’t keep me waiting\nThere’s so much love we could be making\nI’m talking kissing, Cuddling\nRose petals in the bathtub\nLets jump in, Its bubblin\n\nI aint playin no games\nEvery word that I say \nIs coming straight from the heart\n(so if you tryna lay in these arms)\n\nImma leave the door open\n(imma leave the door open)\nImma leave the open girl\n(Imma leave the door open, hopin)\n\nThat you feel the way I feel\nAnd you want me like I want you tonight baby\n(tell me that you’re coming through)\n\nLa la laaa la la la la la \n(I need you baby)\n\nLa la laaa la la la la\n(I gotta see you baby)\n\nLa la laaa la la la la \n(Girl I’m tryna give you this)\n(aaaaahhhhhhhhhh)\n\nImma leave the door open\n(imma leave the door open)\nImma leave the open girl\n(Imma leave the door open, hopin)\n\nThat you feel the way I feel\nAnd you want me like I want you tonight baby\n(tell me that you’re coming through)\n\n\nThe official YouTube channel of Atlantic Records artist Bruno Mars. 11x GRAMMY Award winner and 27x GRAMMY Award nominee Bruno Mars is a celebrated singer, songwriter, producer, and musician with iconic hits like "The Lazy Song", "That\'s What I Like", "Just The Way You Are", "24K Magic", "Locked Out Of Heaven", and "When I Was Your Man". His legendary body of work also includes blockbuster albums such as Doo-Wops & Hooligans, Unorthodox Jukebox, and 24K Magic, as well as era-defining collaborations like "Uptown Funk" with Mark Ronson, "Finesse" with Cardi B, and "Nothin\' On You" with B.o.B. Forever classic, yet supremely innovative, Bruno continues to redefine music, style, and popular culture, pushing the boundaries of pop, R&B, funk, soul, hip-hop, and dance, and remains as influential as ever.\n\n#BrunoMars #AndersonPaak #SilkSonic #LeaveTheDoorOpen',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/adLGHcj_fmA/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/adLGHcj_fmA/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/adLGHcj_fmA/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/adLGHcj_fmA/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/adLGHcj_fmA/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'Bruno Mars',
+        liveBroadcastContent: 'none',
+        publishTime: '2021-03-03T22:52:06Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'L_rukYCgYzetotFbs_dP_LniihU',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'QBsA2ETp7JA',
+      },
+      snippet: {
+        publishedAt: '2014-07-18T06:24:56Z',
+        channelId: 'UCvlJkDfgfG3J38pup6lvrPg',
+        title: 'Hopsin - ILL MIND OF HOPSIN 7',
+        description:
+          'Download now on iTunes: http://flyt.it/poundsyndrome\n\nHopsin\nhttps://www.facebook.com/hellohopsin\nhttp://www.twitter.com/hopsin\nhttp://www.instagram.com/hopsinson\n\nProduced by Hopsin\n\nDirected by Hopsin\n\nFunk Volume\nhttp://www.myfunkvolume.com',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/QBsA2ETp7JA/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/QBsA2ETp7JA/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/QBsA2ETp7JA/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/QBsA2ETp7JA/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/QBsA2ETp7JA/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'Hopsintv',
+        liveBroadcastContent: 'none',
+        publishTime: '2014-07-18T06:24:56Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'N_kXIt1Q6OSSCqRlIhiTIUpQZHc',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'ktEoXtQEtqA',
+      },
+      snippet: {
+        publishedAt: '2021-03-11T20:47:58Z',
+        channelId: 'UCBj7lf9bAmctuhsnZ3oxqsg',
+        title: 'TRASH or PASS! NF ft Hopsin ( Lost ) [REACTION!!!]',
+        description:
+          '#FireSquad Was that a Trash or Pass?\n\nSong - NF ft Hopsin ( Lost )\n\nFollow me on social media!\n● https://patreon.com/Layedbakdfr\n● https://www.instagram.com/LayedBakDFR/\n● https://twitter.com/LayedBakDFR\n● https://soundcloud.com/LayedBakDFR\n● Snapchat: LayedBakDFR\n● Twitch: https://twitch.tv/layedbakdfr\n______________________________________________________________________________\n\nWhat reaction do you want to see next? Comment down below!',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/ktEoXtQEtqA/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/ktEoXtQEtqA/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/ktEoXtQEtqA/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/ktEoXtQEtqA/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/ktEoXtQEtqA/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'LayedBakDFR',
+        liveBroadcastContent: 'none',
+        publishTime: '2021-03-11T20:47:58Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: '3YkAFnIyXXgCktoyD7i6LeaTaWY',
+      id: {
+        kind: 'youtube#video',
+        videoId: '33TEU3kQBOo',
+      },
+      snippet: {
+        publishedAt: '2021-02-27T00:40:35Z',
+        channelId: 'UCiIETTq2It3OzW8_WYRPTyQ',
+        title: 'Russ - MISUNDERSTOOD (Official Video)',
+        description:
+          'Official video for "MISUNDERSTOOD" \nhttps://russ.is\u200b\n\nTwitter: https://www.twitter.com/russdiemon\u200b\nInstagram: https://www.instagram.com/russ\u200b\nFacebook: https://www.facebook.com/russtheone\u200b\nTikTok: https://tiktok.com/@russ\u200b\n\n\nSHOP: https://shop.russ.is/\u200b\n\n\nProduced by Russ\n\n\nDirected by Edgar Esteves \n\n\n\n\n\n℗ 2021 Russ My Way Inc.\n\n\n#MISUNDERSTOOD #RUSS',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/33TEU3kQBOo/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/33TEU3kQBOo/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/33TEU3kQBOo/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/33TEU3kQBOo/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/33TEU3kQBOo/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'Russ',
+        liveBroadcastContent: 'none',
+        publishTime: '2021-02-27T00:40:35Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'pfP8DzGfZ4IPI8hVqIetZgqQrpo',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'pg17kp1s83U',
+      },
+      snippet: {
+        publishedAt: '2019-08-30T18:42:46Z',
+        channelId: 'UCWBlX81voC_zMGsQvfiaZoQ',
+        title: 'NF - When I Grow Up Ft. Logic, Joyner Lucas & Eminem (Remix)',
+        description:
+          '"When I Grow Up" from the album : (The Search) by NF feat. Eminem, Joyner Lucas & Logic (Remix By Belal).\nFollow me on IG:\nhttps://www.instagram.com/b.e.l.a.l_279/\nAdd me on Facebook:\nhttps://www.facebook.com/blal.ashraf.33',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/pg17kp1s83U/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/pg17kp1s83U/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/pg17kp1s83U/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/pg17kp1s83U/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/pg17kp1s83U/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'Bulky B.',
+        liveBroadcastContent: 'none',
+        publishTime: '2019-08-30T18:42:46Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'bs5FhryCqP5mCM98uB0War8_BKE',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'S-yT5-C-jDA',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'FdxaRFsaTRm4j2nSO_W2llRIeGM',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'qOT60LuYHmA',
+      },
+      snippet: {
+        publishedAt: '2021-01-22T14:16:34Z',
+        channelId: 'UCvlJkDfgfG3J38pup6lvrPg',
+        title: 'Hopsin - Your House',
+        description:
+          "Hopsin's new single YOUR HOUSE available everywhere:\nhttps://ffm.to/your_house\n\nFollow Hopsin:\nFacebook: http://www.facebook.com/hellohopsin\nInstagram: @hopsin\nTwitter: @hopsin\nWebsite: http://www.undercoverprodigy.com",
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/qOT60LuYHmA/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/qOT60LuYHmA/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/qOT60LuYHmA/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/qOT60LuYHmA/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/qOT60LuYHmA/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'Hopsintv',
+        liveBroadcastContent: 'none',
+        publishTime: '2021-01-22T14:16:34Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'G2OCeavhSIAAAm5tcIGhTFqgvZs',
+      id: {
+        kind: 'youtube#video',
+        videoId: '2pJZ3bFbaCQ',
+      },
+      snippet: {
+        publishedAt: '2020-05-10T11:06:03Z',
+        channelId: 'UCKZwhYmQYXKrminnS7sLbbg',
+        title:
+          '♕ Best NF ft. Eminem Music Playlist | Motivational Music Mix 2020 | Best of NF Remixes ♕',
+        description:
+          '🍹 Best of NF ft. Eminem Remixes! | Big Playlist | Sad Music Mix 2020\n🍸 Subscribe for more videos! ;)\n🥂 Like & Share! :)\n\n♫ \u00ad\u00adSupport NF ♫\n♦ https://instagram.com/nfrealmusic\n♦ http://www.facebook.com/nfrealmusic\n♦ http://www.twitter.com/nfrealmusic\n♦ http://smarturl.it/NFSpotify\n\n♫ \u00ad\u00adSupport Eminem ♫\n♦ http://eminem.com\n♦ https://facebook.com/eminem\n♦ https://twitter.com/eminem\n♦ https://youtube.com/EminemMusic\n♦ https://instagram.com/eminem\n♦ http://eminem.tumblr.com\n\n\n#NF #Eminem #Mix #Playlist #Music',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/2pJZ3bFbaCQ/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/2pJZ3bFbaCQ/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/2pJZ3bFbaCQ/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/2pJZ3bFbaCQ/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/2pJZ3bFbaCQ/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'iHateMyLyfe',
+        liveBroadcastContent: 'none',
+        publishTime: '2020-05-10T11:06:03Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'nEhhJpKqitLqSD9eAn9M__t2bFk',
+      id: {
+        kind: 'youtube#video',
+        videoId: '1AeQjMZiYoE',
+      },
+      snippet: {
+        publishedAt: '2016-07-10T19:46:29Z',
+        channelId: 'UCvlJkDfgfG3J38pup6lvrPg',
+        title: 'Hopsin - Die This Way',
+        description:
+          'Get song on iTunes\nhttp://apple.co/2e4J4aV\n\nHopsin in "Die This Way\' (short film)\nDirected by George Orozco\n\nCatch Hopsin in your city for the NO SHAME tour:  www.undercoverprodigy.com/tour\n\nFollow Hopsin:\nFacebook: http://www.facebook.com/hellohopsin\nInstagram: @hopsinson\nTwitter: @hopsin\nWebsite: http://www.undercoverprodigy.com',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/1AeQjMZiYoE/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/1AeQjMZiYoE/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/1AeQjMZiYoE/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/1AeQjMZiYoE/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/1AeQjMZiYoE/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'Hopsintv',
+        liveBroadcastContent: 'none',
+        publishTime: '2016-07-10T19:46:29Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'nzn3_Wo6kdyLOeyojtm6n5wZnJQ',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'zYE17Wlep80',
+      },
+      snippet: {
+        publishedAt: '2018-02-15T20:36:31Z',
+        channelId: 'UC0v-tlzsn0QZwJnkiaUSJVQ',
+        title: 'COLLEGE KIDS REACT TO NF',
+        description:
+          'NF reacted to by College Kids! Video links below!\nSubscribe to NF https://www.youtube.com/user/NFVEVO\nWatch all main React episodes (Kids/Teens/Elders/Adults/YouTubers): http://goo.gl/4iDVa\nJoin the SuperFam and support FBE: https://www.youtube.com/user/React/join\nSUBSCRIBE & HIT THE 🔔! New Videos 2pm PST on FBE! http://goo.gl/aFu8C\nWatch latest videos from FBE: https://goo.gl/aU5PSm\n\nContent Featured: \nNF - NO NAME\nhttps://goo.gl/N5iNZo\n\nNF - Let You Down\nhttps://goo.gl/gVpZEM\n\nNF - Real\nhttps://goo.gl/ehj6ru\n\nNF - All I Have\nhttps://goo.gl/hNZnqf\n\nNF - How Could You Leave Us\nhttps://goo.gl/4ju4Cs\n\nFBE’s goal is to credit the original links to the content featured in its shows. If you see incorrect or missing attribution please reach out to credits@fbeteam.com \n\nFeatured College Kids: \nBrandon\nhttps://www.youtube.com/c/brandocommandoyaboi\nBrittany\nhttps://www.instagram.com/brittcuadra/\nDionte\nhttps://www.snapchat.com/add/cover_tastic\nEric\nhttps://www.youtube.com/4N1\nEthan James\nhttps://www.youtube.com/channel/UCqSX49pYAIKd8YslPguEG2g\nLabib\nhttps://www.youtube.com/user/Labib96\nMadison\nhttps://www.instagram.com/MaddiePerry123/\nMichelle\nhttps://www.instagram.com/thewickedlady/\nSheila\nhttps://www.youtube.com/channel/UCtOHkTxCwPWkdkTckp1-jlw\n\nMERCH 👕 https://www.shopfbe.com\n\nFollow FBE:\nFBE WEBSITE: https://fbeteam.com/\nFBE CHANNEL: http://www.youtube.com/FBE\nREACT CHANNEL: http://www.youtube.com/REACT\nBONUS CHANNEL: https://www.youtube.com/FBE2\nFACEBOOK: http://www.facebook.com/FBE\nFACEBOOK: http://www.facebook.com/FBEShows\nTWITTER: http://www.twitter.com/fbe\nINSTAGRAM: http://www.instagram.com/f/fbe\nSNAPCHAT: https://www.snapchat.com/add/finebros\n\nTWITCH: https://www.twitch.tv/fbelive\n\nSEND US STUFF:\nFBE\nP.O. BOX 4324\nValley Village, CA 91617-4324\n\nCreators & \nHead of Post Production - Nick Bergthold\nSr. Associate Producer - Kyle Segal\nAssociate Producer - Ethan Weiser, Vartuhi Oganesyan\nJr. Associate Producer - JC Chavez\nProduction Coordinator - Cynthia Garcia\nStudio Technician - Josh Hilton\nProduction Assistant - Stephen Miller, Jayden Romero\nEditor - Zach Butler\nAssistant Editor -  Austin Miller, Lizzy Siskind\nDirector of Production - Drew Roder\nAssistant Production Coordinator - Kristy Kiefer\nPost Supervisor - Adam Speas, David Valbuena\nSet design - Melissa Judson\nMusic - Cyrus Ghahremani\n\n© FBE, Inc\n\nCollege Kids React #53 - COLLEGE KIDS REACT TO NF',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/zYE17Wlep80/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/zYE17Wlep80/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/zYE17Wlep80/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/zYE17Wlep80/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+        },
+        channelTitle: 'REACT',
+        liveBroadcastContent: 'none',
+        publishTime: '2018-02-15T20:36:31Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'Y8s8bCjgSqbWV-nZG5F9Y8dCbwU',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'ztIyOjUPAzA',
+      },
+      snippet: {
+        publishedAt: '2020-09-30T08:10:16Z',
+        channelId: 'UCRI00CwLZdLRCWg5BdDOsNw',
+        title: "I Watched Deadpool 2 in 0.25x Speed and Here's What I Found",
+        description:
+          "This video is sponsored by SquareSpace. Click this link to build your own professional website today: https://www.squarespace.com/thecanadianlad\n\n\nToday's Edition of I Watched in 0.25x Speed: Deadpool 2 (33 New Details).\nFollow me on Instagram: https://www.instagram.com/thecanadianlad\n\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\nPlease do like this video to help me keep growing and subscribe to my channel that helps me in ways I can't even explain. I am really grateful to you guys for supporting my channel.\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\nIf you wanna reach me out for Marvel related theories/ideas: thecanadianbrat@gmail.com\nFor all business related inquiries: thecanadianlad@ellifyagency.com (Business-Only)\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n#Deadpool #XMen #Marvel\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\nMusic: Avengers: Infinity War - It's Time║Free Music // No Copyright Music\nYouTube URL: https://youtu.be/iyXSYr0jsoE\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\nI believe all content used falls under the remits of Fair Use, but if any content owners would like to dispute this I will not hesitate to immediately remove said content. It is not my intent to in any way infringe on their content ownership. If you happen to find your art or images in the video please let me know and I will be glad to credit you.",
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/ztIyOjUPAzA/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/ztIyOjUPAzA/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/ztIyOjUPAzA/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/ztIyOjUPAzA/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/ztIyOjUPAzA/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'The Canadian Lad',
+        liveBroadcastContent: 'none',
+        publishTime: '2020-09-30T08:10:16Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'ZE0I9jUwvPrGsOiAAcJEm6bXAyY',
+      id: {
+        kind: 'youtube#video',
+        videoId: '4F1oF7Nr5do',
+      },
+      snippet: {
+        publishedAt: '2021-02-18T19:00:53Z',
+        channelId: 'UC_62jYuKq0O-K66pjrK5jhQ',
+        title: "Rapper Reacts to NF CLOUDS!! | HE'S FIRING SHOTS?! (First Ever Reaction)",
+        description:
+          "Nate is back! Rapper reacts to NF and surprise new song 'Clouds'. Comment below more reactions you want to see!\n\nOrder my BRAND NEW ALBUM NOW!! (all proceeds directly support the channel)\nhttp://www.knoxhillmusic.com\n\nStream it on all platforms: https://distrokid.com/hyperfollow/knoxhill/chaos-theory-2\n\nThe music video 'I Worry About Myself' in the intro: https://youtu.be/9gM3nZ8swuc\n\nFollow me on Instagram: http://www.instagram.com/knoxhilldmv\nNew songs on my Twitter: http://www.twitter.com/theknoxhill\nFacebook: http://www.facebook.com/knoxhill\nTik Tok: @knoxhilldmv\n\nSupport the Patreon for exclusive content! http://www.patreon.com/knoxhill\nCome join the Discord and say hello: https://discord.gg/wf8FX6X\n\nFollow my Spotify: http://bit.ly/KnoxHillSpotify\nFollow my Apple Music: http://bit.ly/KnoxHillAppleMusic\n\nSupport independent music: http://bit.ly/SubscribeKnoxHill\n\nLyrics.\n\nLike this vid? Here's more like it:\nMy Song 'Lean On': https://youtu.be/Cf4MTKKIUrE\nEminem Gnat Music Video Reaction:\nhttps://youtu.be/cDsrQ1Swz4I \nBlackpink Lovesick Girls First Ever Reaction: https://youtu.be/HS-U7rngXkI\n\nBTS Official  Mic Drop First Ever Reaction: https://youtu.be/zTsmop6LlZI\nEminem Zeus Reaction: https://youtu.be/j5bR7iD5koM\nEZ Mil Panalo live on the USA Wish Bus: https://youtu.be/XjZDGmsnP8Q\n NF Real Music Intro III Reaction: https://youtu.be/VDK0KrLxS6I\nNF Intro II: https://youtu.be/PQp89meF5BI\nEverything Great About Paid My Dues: https://youtu.be/Of8s9_vcBTI\nRapper Reacts to Mansion: \nhttps://youtu.be/3NrD1aTGgWk\nNF Oh Lord: https://youtu.be/a8opoXN35s8\n\nNF Reaction. NF Clouds. NF Real Music Clouds Music Video. \n@NFVEVO @NFrealmusic \n\nDo what you love, or don't do it at all. \n\nBusiness:\nknoxhilldmv@gmail.com\n\nKnox Hill\n\n*Please note that subscriber giveaways are not real and meant for humor and entertainment purposes only. None of the products that are mentioned are physically given away.*\n\n*Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for \"fair use\" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use. No copyright infringement intended. ALL RIGHTS BELONG TO THEIR RESPECTIVE OWNERS*\n\n#NF #Clouds #Reaction",
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/4F1oF7Nr5do/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/4F1oF7Nr5do/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/4F1oF7Nr5do/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/4F1oF7Nr5do/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/4F1oF7Nr5do/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'Knox Hill',
+        liveBroadcastContent: 'none',
+        publishTime: '2021-02-18T19:00:53Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: '4TDe4Icqt8LzUixszFwOYM2Z_p8',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'ibWdgkv1LSA',
+      },
+      snippet: {
+        publishedAt: '2016-11-08T22:28:14Z',
+        channelId: 'UCW1-IILatiSxnede5HicwnA',
+        title: 'Mansion - NF (Lyrics)',
+        description:
+          'Mansion by NF from his album Mansion.\nI CLAIM NO RIGHTS TO THIS SONG.',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/ibWdgkv1LSA/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/ibWdgkv1LSA/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/ibWdgkv1LSA/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/ibWdgkv1LSA/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+        },
+        channelTitle: 'ThatCrazyChick',
+        liveBroadcastContent: 'none',
+        publishTime: '2016-11-08T22:28:14Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'XzcneI77AG2sFrUEFj6FjqDNvuY',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'Y7pteqWRYu4',
+      },
+      snippet: {
+        publishedAt: '2019-01-28T10:50:21Z',
+        channelId: 'UCvlJkDfgfG3J38pup6lvrPg',
+        title: "Hopsin - You Should've Known (feat. DAX)",
+        description:
+          'Listen to the song here:  http://hyperurl.co/vcwhk3\n\nDirector: Hopsin\nProducer: Moses Israel \nProd. Company: Bandwidth Bros. \n1st AD: Roberto Ahumada \n2nd AD: Sergio Ramirez\nDP: Russ Fraser\nSteadicam: Bill Hunt \nArt Director: Day Hernandez \nColor: Ntropic\n\n\n\nFollow Hopsin:\nFacebook: http://www.facebook.com/hellohopsin\nInstagram: @hopsin\nTwitter: @hopsin\nWebsite: http://www.undercoverprodigy.com',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/Y7pteqWRYu4/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/Y7pteqWRYu4/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/Y7pteqWRYu4/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/Y7pteqWRYu4/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/Y7pteqWRYu4/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'Hopsintv',
+        liveBroadcastContent: 'none',
+        publishTime: '2019-01-28T10:50:21Z',
+      },
+    },
+    {
+      kind: 'youtube#searchResult',
+      etag: 'YadiC6sU38WkG8MgpVfD1tVV5mE',
+      id: {
+        kind: 'youtube#video',
+        videoId: 'EIx39N5DVm8',
+      },
+      snippet: {
+        publishedAt: '2021-03-11T17:15:57Z',
+        channelId: 'UC2GF1LsqB3BrSoigfmhXVXg',
+        title: '[ REACTION ] NF - LOST ft. Hopsin | THEY KILLED THIS!!! 🔥🔥',
+        description:
+          'Rapper Reacts to NF - LOST ft. Hopsin | THEY KILLED THIS!!! 🔥🔥. JOIN THE KINGDOM TODAY FOR MORE MUSIC REACTION VIDEOS. 👈\n\n🔴 Subscribe For Official Music Video Reactions From All Genres.\n\nADD ON SPOTIFY: https://open.spotify.com/artist/0lEvPwrWS9883d0jQ4SkA7?si=7OywbSsvSRqFt4nT1Ubvdg\n\nINQUIRIES: kingblitzbiz@gmail.com\nINSTAGRAM: http://www.instagram.com/kingblitz\nSOCIAL: http://www.linktr.ee/kingblitz 👈\n\nPaypal: http://www.paypal.me/kingblitz\nCashApp: https://cash.app/$kingblitzcash\n\nFAIR USE:\n*Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. ALL RIGHTS BELONG TO THEIR RESPECTIVE OWNERS*\n\n#nf #reaction #hopsin',
+        thumbnails: {
+          default: {
+            url: 'https://i.ytimg.com/vi/EIx39N5DVm8/default.jpg',
+            width: 120,
+            height: 90,
+          },
+          medium: {
+            url: 'https://i.ytimg.com/vi/EIx39N5DVm8/mqdefault.jpg',
+            width: 320,
+            height: 180,
+          },
+          high: {
+            url: 'https://i.ytimg.com/vi/EIx39N5DVm8/hqdefault.jpg',
+            width: 480,
+            height: 360,
+          },
+          standard: {
+            url: 'https://i.ytimg.com/vi/EIx39N5DVm8/sddefault.jpg',
+            width: 640,
+            height: 480,
+          },
+          maxres: {
+            url: 'https://i.ytimg.com/vi/EIx39N5DVm8/maxresdefault.jpg',
+            width: 1280,
+            height: 720,
+          },
+        },
+        channelTitle: 'KING BLITZ',
+        liveBroadcastContent: 'none',
+        publishTime: '2021-03-11T17:15:57Z',
+      },
+    },
+  ];
+
+  return {
+    payload: { relatedVideos },
+    type: types.YOUTUBE_RELATED_VIDEOS,
+  };
+};
+
+export const youtubeDetailVideo = async (idVideo) => {
+  // const response = await YoutubeService.getStatistics(idVideo);
+  // const detailVideo = response.result.items[0];
+
+  const detailVideo = {
+    kind: 'youtube#video',
+    etag: '7igsy6SuQGnZUdCtd6VfNRyQoZ0',
+    id: 'sG9rX6Ifzhw',
+    snippet: {
+      publishedAt: '2021-03-09T10:58:19Z',
+      channelId: 'UCq18eeL7D9Vd8DhjMcLh9QQ',
+      title:
+        'Piers and Alex Clash Over Prince Harry and Meghan’s Accusations of Racism | Good Morning Britain',
+      description:
+        'Following the Duke and Duchess of Sussex’s landmark interview with Oprah Winfrey, today’s Good Morning Britain shared the reaction to the revelations, including those about Meghan’s suicidal thoughts and allegations of racism within the Royal family.\n\nSubscribe now for more! http://bit.ly/1NbomQa\n\nBroadcast on 09/03/2021\n\nLike, follow and subscribe to Good Morning Britain!\n\nThe Good Morning Britain YouTube channel delivers you the news that you’re waking up to in the morning. From exclusive interviews with some of the biggest names in politics and showbiz to heartwarming human interest stories and unmissable watch again moments. \n\nJoin Susanna Reid, Piers Morgan, Ben Shephard, Kate Garraway, Charlotte Hawkins and Sean Fletcher every weekday on ITV from 6am until 9 every weekday!\n\nITV Hub: https://bit.ly/37kf3wD\nWebsite: http://bit.ly/1GsZuha\nYouTube: http://bit.ly/1Ecy0g1\nFacebook: http://on.fb.me/1HEDRMb\nTwitter: http://bit.ly/1xdLqU3\n\nhttp://www.itv.com\n\n#GMB #PiersMorgan #SusannaReid',
+      thumbnails: {
+        default: {
+          url: 'https://i.ytimg.com/vi/sG9rX6Ifzhw/default.jpg',
+          width: 120,
+          height: 90,
+        },
+        medium: {
+          url: 'https://i.ytimg.com/vi/sG9rX6Ifzhw/mqdefault.jpg',
+          width: 320,
+          height: 180,
+        },
+        high: {
+          url: 'https://i.ytimg.com/vi/sG9rX6Ifzhw/hqdefault.jpg',
+          width: 480,
+          height: 360,
+        },
+        standard: {
+          url: 'https://i.ytimg.com/vi/sG9rX6Ifzhw/sddefault.jpg',
+          width: 640,
+          height: 480,
+        },
+        maxres: {
+          url: 'https://i.ytimg.com/vi/sG9rX6Ifzhw/maxresdefault.jpg',
+          width: 1280,
+          height: 720,
+        },
+      },
+      channelTitle: 'Good Morning Britain',
+      tags: [
+        'good morning britain',
+        'breakfast show',
+        'news',
+        'morning news',
+        'gmb',
+        'good morning britain interview',
+        'itv',
+        'piers morgan',
+        'susanna reid',
+        'Talk Shows - Topic',
+      ],
+      categoryId: '24',
+      liveBroadcastContent: 'none',
+      defaultLanguage: 'en-GB',
+      localized: {
+        title:
+          'Piers and Alex Clash Over Prince Harry and Meghan’s Accusations of Racism | Good Morning Britain',
+        description:
+          'Following the Duke and Duchess of Sussex’s landmark interview with Oprah Winfrey, today’s Good Morning Britain shared the reaction to the revelations, including those about Meghan’s suicidal thoughts and allegations of racism within the Royal family.\n\nSubscribe now for more! http://bit.ly/1NbomQa\n\nBroadcast on 09/03/2021\n\nLike, follow and subscribe to Good Morning Britain!\n\nThe Good Morning Britain YouTube channel delivers you the news that you’re waking up to in the morning. From exclusive interviews with some of the biggest names in politics and showbiz to heartwarming human interest stories and unmissable watch again moments. \n\nJoin Susanna Reid, Piers Morgan, Ben Shephard, Kate Garraway, Charlotte Hawkins and Sean Fletcher every weekday on ITV from 6am until 9 every weekday!\n\nITV Hub: https://bit.ly/37kf3wD\nWebsite: http://bit.ly/1GsZuha\nYouTube: http://bit.ly/1Ecy0g1\nFacebook: http://on.fb.me/1HEDRMb\nTwitter: http://bit.ly/1xdLqU3\n\nhttp://www.itv.com\n\n#GMB #PiersMorgan #SusannaReid',
+      },
+    },
+    statistics: {
+      viewCount: '7559872',
+      likeCount: '74422',
+      dislikeCount: '13420',
+      favoriteCount: '0',
+    },
+  };
+
+  return {
+    payload: { detailVideo },
+    type: types.YOUTUBE_STADISTIC_VIDEOS,
+  };
+};

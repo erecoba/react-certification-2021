@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import {
   Container,
   Logo,
@@ -17,7 +18,9 @@ import logo from '../../assets/img/wizeline-logo.png';
 import { youtubeGetVideos, youtubeSearchVideos } from '../../state/actions/youtube';
 import { useYoutubeVideo } from '../../state/Provider';
 
-export const retrieveVideosEffect = ({ search, dispatch }) => {
+export const retrieveVideosEffect = ({ search, dispatch, hideSearcher }) => {
+  if (hideSearcher) return;
+
   const retriveVideosFetch = async () => {
     if (search && search.trim()) {
       dispatch(await youtubeSearchVideos(search));
@@ -28,28 +31,32 @@ export const retrieveVideosEffect = ({ search, dispatch }) => {
   retriveVideosFetch();
 };
 
-const Header = () => {
+const Header = ({ hideSearcher }) => {
+  const history = useHistory();
   const [search, setSearch] = useState('');
   const { dispatch } = useYoutubeVideo();
 
-  useEffect(() => retrieveVideosEffect({ search, dispatch }), [search]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => retrieveVideosEffect({ search, dispatch, hideSearcher }), [search]);
 
   const handleOnChange = (event) => setSearch(event.target.value);
 
   return (
     <Container>
-      <LogoContainer>
+      <LogoContainer onClick={() => history.push('/')}>
         <Logo src={logo} alt="logo" />
         <LogoName>Wizevideo</LogoName>
       </LogoContainer>
 
       <SearchContainer>
-        <Input
-          placeholder="Buscar"
-          icon={<SeachIcon />}
-          value={search}
-          onChange={handleOnChange}
-        />
+        {!hideSearcher && (
+          <Input
+            placeholder="Buscar"
+            icon={<SeachIcon />}
+            value={search}
+            onChange={handleOnChange}
+          />
+        )}
       </SearchContainer>
 
       <AvatarContainer>

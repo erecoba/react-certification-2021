@@ -11,7 +11,7 @@ const Container = styled.button`
 
   cursor: pointer;
 
-  width: 345px;
+  width: ${({ isFluid }) => (isFluid ? '100%' : '345px')};
   height: 245px;
 
   position: relative;
