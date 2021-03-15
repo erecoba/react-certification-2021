@@ -13,7 +13,11 @@ const Card = ({ id, title, description, imgUrl, channelTitle, isFluid }) => {
   const history = useHistory();
 
   return (
-    <Container isFluid={isFluid} onClick={() => history.push(`/videos/${id}`)}>
+    <Container
+      isFluid={isFluid}
+      onClick={() => history.push(`/videos/${id}`)}
+      aria-label="card-container"
+    >
       <ImageFit src={imgUrl} alt={title} />
       <GradientContainer>
         <Title>{title}</Title>

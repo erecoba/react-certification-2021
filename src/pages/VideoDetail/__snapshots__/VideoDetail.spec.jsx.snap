@@ -1,0 +1,1554 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages - Video detail should render the component 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.c2 {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  cursor: pointer;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.c4 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c6 {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #f0f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c7 {
+  display: inline-block;
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #fff;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+<nav
+    class="c0"
+  >
+    <div
+      aria-label="logo-container"
+      class="c1"
+    >
+      <img
+        alt="logo"
+        class="c2"
+        src="wizeline-logo.png"
+      />
+      <h2
+        class="c3"
+      >
+        Wizevideo
+      </h2>
+    </div>
+    <div
+      class="c4"
+    />
+    <div
+      class="c5"
+    >
+      <div
+        class="c6"
+      >
+        <svg
+          class="c7"
+          color="white"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <circle
+            cx="15.5"
+            cy="9.5"
+            r="1.5"
+          />
+          <circle
+            cx="8.5"
+            cy="9.5"
+            r="1.5"
+          />
+          <circle
+            cx="15.5"
+            cy="9.5"
+            r="1.5"
+          />
+          <circle
+            cx="8.5"
+            cy="9.5"
+            r="1.5"
+          />
+          <path
+            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-2.5c2.33 0 4.32-1.45 5.12-3.5h-1.67c-.69 1.19-1.97 2-3.45 2s-2.75-.81-3.45-2H6.88c.8 2.05 2.79 3.5 5.12 3.5z"
+          />
+        </svg>
+      </div>
+    </div>
+  </nav>
+  .c6 {
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 8px 5px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  height: 245px;
+  position: relative;
+}
+
+.c7 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.c8 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 0 20px 20px;
+  background: linear-gradient( 180deg, rgba(252,254,255,0) 15%, rgba(41,46,50,0.8) 70% );
+  padding: 10px 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c9 {
+  font-size: 0.875rem;
+  text-align: left;
+  color: #fff;
+}
+
+.c10 {
+  font-size: 0.75rem;
+  text-align: left;
+  color: #fff;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.c11 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 30px;
+  padding: 5px 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f0f;
+  color: #fff;
+}
+
+.c0 {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 54px);
+  overflow-y: auto;
+  padding: 20px 35px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  height: inherit;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c3 {
+  width: 100%;
+  height: 100%;
+}
+
+.c4 {
+  width: 300px;
+  height: inherit;
+  overflow-y: auto;
+  padding: 20px 16px;
+  position: relative;
+}
+
+.c5 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.c13 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.c16 {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.c12 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c14 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c15 {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+<main
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <iframe
+          class="c3"
+          frameborder="0"
+          src="http://www.youtube.com/embed/undefined"
+        />
+      </div>
+      <div
+        class="c4"
+      >
+        <span
+          class="c5"
+        >
+          Tal vez te interese...
+        </span>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="DOES IT LIVE UP TO THE HYPE??? | NF X HOPSIN \\"LOST\\" FIRST REACTION!!"
+            class="c7"
+            src="https://i.ytimg.com/vi/KenzFW6SsFo/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              DOES IT LIVE UP TO THE HYPE??? | NF X HOPSIN "LOST" FIRST REACTION!!
+            </h2>
+            <span
+              class="c10"
+            >
+              Become a Patreon for exclusive perks and be a direct help to the channel!! https://www.patreon.com/thethirdernest
+
+FOLLOW THE STREAM FAM!! https://www.twitch.tv/thethirdernest
+
+SEE THE GEAR I USE FOR VIDEOS HERE: https://kit.co/thethirdernest
+-----------------------------------------------------------------------------------------------
+DISCORD FOR THE COOL KIDS: https://discord.gg/ycGkz26
+-----------------------------------------------------------------------------------------------
+FOLLOW ME ON SOCIALS!! 
+INSTAGRAM: https://www.instagram.com/thethirdernest/
+TWITTER: https://twitter.com/THETHIRDERNEST
+
+#thethirdernest #thethirdfamily #LOST
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            TheThirdErnest
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="Eminem feat. NF - Only"
+            class="c7"
+            src="https://i.ytimg.com/vi/wohkCHvsIVc/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              Eminem feat. NF - Only
+            </h2>
+            <span
+              class="c10"
+            >
+              NF & Eminem - Only | 2020 Music Video | New Sad Emotional Song of NF and Eminem | Inspired by Godzilla and Darkness
+
+Music Video by Swirve
+https://www.youtube.com/swirvemixes
+
+Inspired by
+Eminem: Godzilla ft. Juice World, Darkness (Official Videos)
+NF: Paid My Dues, When I Grow Up, The Search, Time, Leave Me Alone (Official Videos)
+
+Support Eminem
+Facebook: https://www.facebook.com/eminem/
+Instagram: https://www.instagram.com/eminem/
+
+Support NF
+Facebook: https://www.facebook.com/nfrealmusic/
+Instagram: https://www.instagram.com/nfrealmusic/
+
+This is a Sad Song by Eminem and NF.
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            Thug Life Music
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="RAPPER REACTS to NF - LOST ft. Hopsin"
+            class="c7"
+            src="https://i.ytimg.com/vi/Hzib-n4hi5o/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              RAPPER REACTS to NF - LOST ft. Hopsin
+            </h2>
+            <span
+              class="c10"
+            >
+              Install Raid for Free ✅ IOS: https://clcr.me/kSJ9OI  ✅ ANDROID: https://clcr.me/b9VAq1   
+✅ PC: https://clcr.me/D3pgTh  and get a special starter pack 💥Available only for the next 30 days!
+
+I did my best to record with a setup that I'm not use to! Hope you guys enjoyed the reaction. I'm just unbelievably happy that NF and Hopsin have finally made a song together.
+
+►Features: https://www.indieamplify.com/product/feature-crypt/
+
+►Business Inquiries: cryptbusinessllc@gmail.com
+
+►Sports Channel: https://www.youtube.com/channel/UCwX3_mpYFKOJREdnOHD16LQ
+
+►Podcast Channel: https://www.youtube.com/channel/UC7sFMMoM89vgcgDOUG9XMxQ
+
+► Merch: https://www.crypttherapper.com/shop
+
+► Instagram: https://instagram.com/CryptTheRapper
+
+► Twitter: https://twitter.com/CryptTheRapper
+
+► Spotify: https://open.spotify.com/artist/1WIHbvNZTybCVHFMbzuGJo
+
+► Facebook: https://www.facebook.com/crypttherapperOG/
+
+► Soundcloud: https://soundcloud.com/crypt-226456644
+
+I'm a fat, white YouTube rapper and damn proud of it. Welcome to the Crypt show.
+
+RAPPER REACTS to NF - LOST ft. Hopsin
+
+#NF #Hopsin #Lost
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            Crypt
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="Rapper Reacts to NF LOST ft. Hopsin!! | THE BARS IN THIS! (First Ever Reaction)"
+            class="c7"
+            src="https://i.ytimg.com/vi/Ykg0fzAC2S4/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              Rapper Reacts to NF LOST ft. Hopsin!! | THE BARS IN THIS! (First Ever Reaction)
+            </h2>
+            <span
+              class="c10"
+            >
+              There are levels to this! Rapper reacts to NF and surprise new song 'Lost' ft. Hopsin. Comment below more reactions you want to see!
+
+Order my BRAND NEW ALBUM NOW!! (all proceeds directly support the channel)
+http://www.knoxhillmusic.com
+
+Stream it on all platforms: https://distrokid.com/hyperfollow/knoxhill/chaos-theory-2
+
+The music video 'U Mad Yet' in the intro: https://youtu.be/h9g-G_57EbY
+
+Follow me on Instagram: http://www.instagram.com/knoxhilldmv
+New songs on my Twitter: http://www.twitter.com/theknoxhill
+Facebook: http://www.facebook.com/knoxhill
+Tik Tok: @knoxhilldmv
+
+Support the Patreon for exclusive content! http://www.patreon.com/knoxhill
+Come join the Discord and say hello: https://discord.gg/wf8FX6X
+
+Follow my Spotify: http://bit.ly/KnoxHillSpotify
+Follow my Apple Music: http://bit.ly/KnoxHillAppleMusic
+
+Support independent music: http://bit.ly/SubscribeKnoxHill
+
+Lyrics.
+
+Like this vid? Here's more like it:
+My Song 'Lean On': https://youtu.be/Cf4MTKKIUrE
+Eminem Gnat Music Video Reaction:
+https://youtu.be/cDsrQ1Swz4I 
+Blackpink Lovesick Girls First Ever Reaction: https://youtu.be/HS-U7rngXkI
+
+BTS Official  Mic Drop First Ever Reaction: https://youtu.be/zTsmop6LlZI
+Eminem Zeus Reaction: https://youtu.be/j5bR7iD5koM
+EZ Mil Panalo live on the USA Wish Bus: https://youtu.be/XjZDGmsnP8Q
+ NF Real Music Intro III Reaction: https://youtu.be/VDK0KrLxS6I
+NF Intro II: https://youtu.be/PQp89meF5BI
+Everything Great About Paid My Dues: https://youtu.be/Of8s9_vcBTI
+Rapper Reacts to Mansion: 
+https://youtu.be/3NrD1aTGgWk
+NF Oh Lord: https://youtu.be/a8opoXN35s8
+
+NF Reaction. NF Lost ft. Hopsin
+ @NFVEVO @NFrealmusic  @Hopsintv 
+
+Do what you love, or don't do it at all. 
+
+Business:
+knoxhilldmv@gmail.com
+
+Knox Hill
+
+*Please note that subscriber giveaways are not real and meant for humor and entertainment purposes only. None of the products that are mentioned are physically given away.*
+
+*Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use. No copyright infringement intended. ALL RIGHTS BELONG TO THEIR RESPECTIVE OWNERS*
+
+#NF #Lost #Reaction
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            Knox Hill
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="Bruno Mars, Anderson .Paak, Silk Sonic - Leave the Door Open [Official Video]"
+            class="c7"
+            src="https://i.ytimg.com/vi/adLGHcj_fmA/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              Bruno Mars, Anderson .Paak, Silk Sonic - Leave the Door Open [Official Video]
+            </h2>
+            <span
+              class="c10"
+            >
+              The official music video for Bruno Mars, Anderson .Paak, Silk Sonic's new single "Leave the Door Open"
+Download/Stream: https://apple.co/38tHKJs
+
+Directed by Bruno Mars and Florent Dechard 
+Phil Tayag - creative consultant
+
+Limited Edition Collectible CD Single Available Here: https://smarturl.it/LTDO_CDSINGLE
+
+🔔 Subscribe for the latest official music videos, live performances, lyric videos, official audio, and more: https://Atlantic.lnk.to/BMsubscribe
+ 
+🎵 Listen to the Best of Bruno Mars playlist ➤ https://bit.ly/3bbslw8​ 
+🎵 Watch Bruno Mars’ Official Music Videos ➤ https://bit.ly/2U7I3mi​ 
+
+Get Bruno Mars merchandise! https://brunom.rs/brunomarsstore 
+
+Connect with Bruno: 
+http://www.brunomars.com​ 
+http://www.instagram.com/brunomars​ 
+http://www.twitter.com/brunomars​ 
+http://www.facebook.com/brunomars 
+
+Connect with Anderson .Paak.: 
+https://www.facebook.com/AndersonPaak 
+https://www.instagram.com/anderson._paak/ 
+https://twitter.com/AndersonPaak 
+
+Connect with Silk Sonic: 
+https://SilkSonic.lnk.to/Instagram 
+https://SilkSonic.lnk.to/Twitter 
+https://SilkSonic.lnk.to/Facebook 
+https://SilkSonic.lnk.to/Spotify 
+https://SilkSonic.lnk.to/AppleMusic 
+https://SilkSonic.lnk.to/TikTok 
+
+Lyrics: 
+What you doin
+(what you doin)
+
+Where you at
+(where you at)
+
+Oh you got plans  
+(you got plans)
+
+Don’t say that       
+(shut yo trap)
+
+I’m sippin wine     
+(sip sip)
+
+In a robe               
+(drip rip)
+
+I look too good    
+(look too good)
+
+To be alone         
+(wooohooo)
+
+My house clean  
+(house clean)
+
+My pool warm   
+(pool warm)
+
+Just shaved        
+(smooth like a new born)
+
+We should be dancing, romancing
+In the east wing and the west wing
+Of this mansion, wus happenin
+
+I aint playin no games
+Every word that I say 
+Is coming straight from the heart
+(so if you tryna lay in these arms)
+
+Imma leave the door open
+(imma leave the door open)
+Imma leave the open girl
+(Imma leave the door open, hopin)
+
+That you feel the way I feel
+And you want me like I want you tonight baby
+(tell me that you’re coming through)
+
+You’re so sweet 
+(so sweet)
+
+So tight
+(so tight)
+
+I won’t bite
+(ahh ahh)
+
+Unless you like
+(unless you like)
+
+If you smoke
+(what you smoke)
+
+I got that haze
+(purple haze)
+
+And if you’re hungry girl I got filets
+(woohooo)
+
+Ooh baby don’t keep me waiting
+There’s so much love we could be making
+I’m talking kissing, Cuddling
+Rose petals in the bathtub
+Lets jump in, Its bubblin
+
+I aint playin no games
+Every word that I say 
+Is coming straight from the heart
+(so if you tryna lay in these arms)
+
+Imma leave the door open
+(imma leave the door open)
+Imma leave the open girl
+(Imma leave the door open, hopin)
+
+That you feel the way I feel
+And you want me like I want you tonight baby
+(tell me that you’re coming through)
+
+La la laaa la la la la la 
+(I need you baby)
+
+La la laaa la la la la
+(I gotta see you baby)
+
+La la laaa la la la la 
+(Girl I’m tryna give you this)
+(aaaaahhhhhhhhhh)
+
+Imma leave the door open
+(imma leave the door open)
+Imma leave the open girl
+(Imma leave the door open, hopin)
+
+That you feel the way I feel
+And you want me like I want you tonight baby
+(tell me that you’re coming through)
+
+
+The official YouTube channel of Atlantic Records artist Bruno Mars. 11x GRAMMY Award winner and 27x GRAMMY Award nominee Bruno Mars is a celebrated singer, songwriter, producer, and musician with iconic hits like "The Lazy Song", "That's What I Like", "Just The Way You Are", "24K Magic", "Locked Out Of Heaven", and "When I Was Your Man". His legendary body of work also includes blockbuster albums such as Doo-Wops & Hooligans, Unorthodox Jukebox, and 24K Magic, as well as era-defining collaborations like "Uptown Funk" with Mark Ronson, "Finesse" with Cardi B, and "Nothin' On You" with B.o.B. Forever classic, yet supremely innovative, Bruno continues to redefine music, style, and popular culture, pushing the boundaries of pop, R&B, funk, soul, hip-hop, and dance, and remains as influential as ever.
+
+#BrunoMars #AndersonPaak #SilkSonic #LeaveTheDoorOpen
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            Bruno Mars
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="Hopsin - ILL MIND OF HOPSIN 7"
+            class="c7"
+            src="https://i.ytimg.com/vi/QBsA2ETp7JA/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              Hopsin - ILL MIND OF HOPSIN 7
+            </h2>
+            <span
+              class="c10"
+            >
+              Download now on iTunes: http://flyt.it/poundsyndrome
+
+Hopsin
+https://www.facebook.com/hellohopsin
+http://www.twitter.com/hopsin
+http://www.instagram.com/hopsinson
+
+Produced by Hopsin
+
+Directed by Hopsin
+
+Funk Volume
+http://www.myfunkvolume.com
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            Hopsintv
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="TRASH or PASS! NF ft Hopsin ( Lost ) [REACTION!!!]"
+            class="c7"
+            src="https://i.ytimg.com/vi/ktEoXtQEtqA/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              TRASH or PASS! NF ft Hopsin ( Lost ) [REACTION!!!]
+            </h2>
+            <span
+              class="c10"
+            >
+              #FireSquad Was that a Trash or Pass?
+
+Song - NF ft Hopsin ( Lost )
+
+Follow me on social media!
+● https://patreon.com/Layedbakdfr
+● https://www.instagram.com/LayedBakDFR/
+● https://twitter.com/LayedBakDFR
+● https://soundcloud.com/LayedBakDFR
+● Snapchat: LayedBakDFR
+● Twitch: https://twitch.tv/layedbakdfr
+______________________________________________________________________________
+
+What reaction do you want to see next? Comment down below!
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            LayedBakDFR
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="Russ - MISUNDERSTOOD (Official Video)"
+            class="c7"
+            src="https://i.ytimg.com/vi/33TEU3kQBOo/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              Russ - MISUNDERSTOOD (Official Video)
+            </h2>
+            <span
+              class="c10"
+            >
+              Official video for "MISUNDERSTOOD" 
+https://russ.is​
+
+Twitter: https://www.twitter.com/russdiemon​
+Instagram: https://www.instagram.com/russ​
+Facebook: https://www.facebook.com/russtheone​
+TikTok: https://tiktok.com/@russ​
+
+
+SHOP: https://shop.russ.is/​
+
+
+Produced by Russ
+
+
+Directed by Edgar Esteves 
+
+
+
+
+
+℗ 2021 Russ My Way Inc.
+
+
+#MISUNDERSTOOD #RUSS
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            Russ
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="NF - When I Grow Up Ft. Logic, Joyner Lucas & Eminem (Remix)"
+            class="c7"
+            src="https://i.ytimg.com/vi/pg17kp1s83U/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              NF - When I Grow Up Ft. Logic, Joyner Lucas & Eminem (Remix)
+            </h2>
+            <span
+              class="c10"
+            >
+              "When I Grow Up" from the album : (The Search) by NF feat. Eminem, Joyner Lucas & Logic (Remix By Belal).
+Follow me on IG:
+https://www.instagram.com/b.e.l.a.l_279/
+Add me on Facebook:
+https://www.facebook.com/blal.ashraf.33
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            Bulky B.
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="Hopsin - Your House"
+            class="c7"
+            src="https://i.ytimg.com/vi/qOT60LuYHmA/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              Hopsin - Your House
+            </h2>
+            <span
+              class="c10"
+            >
+              Hopsin's new single YOUR HOUSE available everywhere:
+https://ffm.to/your_house
+
+Follow Hopsin:
+Facebook: http://www.facebook.com/hellohopsin
+Instagram: @hopsin
+Twitter: @hopsin
+Website: http://www.undercoverprodigy.com
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            Hopsintv
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="♕ Best NF ft. Eminem Music Playlist | Motivational Music Mix 2020 | Best of NF Remixes ♕"
+            class="c7"
+            src="https://i.ytimg.com/vi/2pJZ3bFbaCQ/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              ♕ Best NF ft. Eminem Music Playlist | Motivational Music Mix 2020 | Best of NF Remixes ♕
+            </h2>
+            <span
+              class="c10"
+            >
+              🍹 Best of NF ft. Eminem Remixes! | Big Playlist | Sad Music Mix 2020
+🍸 Subscribe for more videos! ;)
+🥂 Like & Share! :)
+
+♫ ­­Support NF ♫
+♦ https://instagram.com/nfrealmusic
+♦ http://www.facebook.com/nfrealmusic
+♦ http://www.twitter.com/nfrealmusic
+♦ http://smarturl.it/NFSpotify
+
+♫ ­­Support Eminem ♫
+♦ http://eminem.com
+♦ https://facebook.com/eminem
+♦ https://twitter.com/eminem
+♦ https://youtube.com/EminemMusic
+♦ https://instagram.com/eminem
+♦ http://eminem.tumblr.com
+
+
+#NF #Eminem #Mix #Playlist #Music
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            iHateMyLyfe
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="Hopsin - Die This Way"
+            class="c7"
+            src="https://i.ytimg.com/vi/1AeQjMZiYoE/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              Hopsin - Die This Way
+            </h2>
+            <span
+              class="c10"
+            >
+              Get song on iTunes
+http://apple.co/2e4J4aV
+
+Hopsin in "Die This Way' (short film)
+Directed by George Orozco
+
+Catch Hopsin in your city for the NO SHAME tour:  www.undercoverprodigy.com/tour
+
+Follow Hopsin:
+Facebook: http://www.facebook.com/hellohopsin
+Instagram: @hopsinson
+Twitter: @hopsin
+Website: http://www.undercoverprodigy.com
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            Hopsintv
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="COLLEGE KIDS REACT TO NF"
+            class="c7"
+            src="https://i.ytimg.com/vi/zYE17Wlep80/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              COLLEGE KIDS REACT TO NF
+            </h2>
+            <span
+              class="c10"
+            >
+              NF reacted to by College Kids! Video links below!
+Subscribe to NF https://www.youtube.com/user/NFVEVO
+Watch all main React episodes (Kids/Teens/Elders/Adults/YouTubers): http://goo.gl/4iDVa
+Join the SuperFam and support FBE: https://www.youtube.com/user/React/join
+SUBSCRIBE & HIT THE 🔔! New Videos 2pm PST on FBE! http://goo.gl/aFu8C
+Watch latest videos from FBE: https://goo.gl/aU5PSm
+
+Content Featured: 
+NF - NO NAME
+https://goo.gl/N5iNZo
+
+NF - Let You Down
+https://goo.gl/gVpZEM
+
+NF - Real
+https://goo.gl/ehj6ru
+
+NF - All I Have
+https://goo.gl/hNZnqf
+
+NF - How Could You Leave Us
+https://goo.gl/4ju4Cs
+
+FBE’s goal is to credit the original links to the content featured in its shows. If you see incorrect or missing attribution please reach out to credits@fbeteam.com 
+
+Featured College Kids: 
+Brandon
+https://www.youtube.com/c/brandocommandoyaboi
+Brittany
+https://www.instagram.com/brittcuadra/
+Dionte
+https://www.snapchat.com/add/cover_tastic
+Eric
+https://www.youtube.com/4N1
+Ethan James
+https://www.youtube.com/channel/UCqSX49pYAIKd8YslPguEG2g
+Labib
+https://www.youtube.com/user/Labib96
+Madison
+https://www.instagram.com/MaddiePerry123/
+Michelle
+https://www.instagram.com/thewickedlady/
+Sheila
+https://www.youtube.com/channel/UCtOHkTxCwPWkdkTckp1-jlw
+
+MERCH 👕 https://www.shopfbe.com
+
+Follow FBE:
+FBE WEBSITE: https://fbeteam.com/
+FBE CHANNEL: http://www.youtube.com/FBE
+REACT CHANNEL: http://www.youtube.com/REACT
+BONUS CHANNEL: https://www.youtube.com/FBE2
+FACEBOOK: http://www.facebook.com/FBE
+FACEBOOK: http://www.facebook.com/FBEShows
+TWITTER: http://www.twitter.com/fbe
+INSTAGRAM: http://www.instagram.com/f/fbe
+SNAPCHAT: https://www.snapchat.com/add/finebros
+
+TWITCH: https://www.twitch.tv/fbelive
+
+SEND US STUFF:
+FBE
+P.O. BOX 4324
+Valley Village, CA 91617-4324
+
+Creators & 
+Head of Post Production - Nick Bergthold
+Sr. Associate Producer - Kyle Segal
+Associate Producer - Ethan Weiser, Vartuhi Oganesyan
+Jr. Associate Producer - JC Chavez
+Production Coordinator - Cynthia Garcia
+Studio Technician - Josh Hilton
+Production Assistant - Stephen Miller, Jayden Romero
+Editor - Zach Butler
+Assistant Editor -  Austin Miller, Lizzy Siskind
+Director of Production - Drew Roder
+Assistant Production Coordinator - Kristy Kiefer
+Post Supervisor - Adam Speas, David Valbuena
+Set design - Melissa Judson
+Music - Cyrus Ghahremani
+
+© FBE, Inc
+
+College Kids React #53 - COLLEGE KIDS REACT TO NF
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            REACT
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="I Watched Deadpool 2 in 0.25x Speed and Here's What I Found"
+            class="c7"
+            src="https://i.ytimg.com/vi/ztIyOjUPAzA/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              I Watched Deadpool 2 in 0.25x Speed and Here's What I Found
+            </h2>
+            <span
+              class="c10"
+            >
+              This video is sponsored by SquareSpace. Click this link to build your own professional website today: https://www.squarespace.com/thecanadianlad
+
+
+Today's Edition of I Watched in 0.25x Speed: Deadpool 2 (33 New Details).
+Follow me on Instagram: https://www.instagram.com/thecanadianlad
+
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+Please do like this video to help me keep growing and subscribe to my channel that helps me in ways I can't even explain. I am really grateful to you guys for supporting my channel.
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+If you wanna reach me out for Marvel related theories/ideas: thecanadianbrat@gmail.com
+For all business related inquiries: thecanadianlad@ellifyagency.com (Business-Only)
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+#Deadpool #XMen #Marvel
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+
+Music: Avengers: Infinity War - It's Time║Free Music // No Copyright Music
+YouTube URL: https://youtu.be/iyXSYr0jsoE
+
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+I believe all content used falls under the remits of Fair Use, but if any content owners would like to dispute this I will not hesitate to immediately remove said content. It is not my intent to in any way infringe on their content ownership. If you happen to find your art or images in the video please let me know and I will be glad to credit you.
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            The Canadian Lad
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="Rapper Reacts to NF CLOUDS!! | HE'S FIRING SHOTS?! (First Ever Reaction)"
+            class="c7"
+            src="https://i.ytimg.com/vi/4F1oF7Nr5do/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              Rapper Reacts to NF CLOUDS!! | HE'S FIRING SHOTS?! (First Ever Reaction)
+            </h2>
+            <span
+              class="c10"
+            >
+              Nate is back! Rapper reacts to NF and surprise new song 'Clouds'. Comment below more reactions you want to see!
+
+Order my BRAND NEW ALBUM NOW!! (all proceeds directly support the channel)
+http://www.knoxhillmusic.com
+
+Stream it on all platforms: https://distrokid.com/hyperfollow/knoxhill/chaos-theory-2
+
+The music video 'I Worry About Myself' in the intro: https://youtu.be/9gM3nZ8swuc
+
+Follow me on Instagram: http://www.instagram.com/knoxhilldmv
+New songs on my Twitter: http://www.twitter.com/theknoxhill
+Facebook: http://www.facebook.com/knoxhill
+Tik Tok: @knoxhilldmv
+
+Support the Patreon for exclusive content! http://www.patreon.com/knoxhill
+Come join the Discord and say hello: https://discord.gg/wf8FX6X
+
+Follow my Spotify: http://bit.ly/KnoxHillSpotify
+Follow my Apple Music: http://bit.ly/KnoxHillAppleMusic
+
+Support independent music: http://bit.ly/SubscribeKnoxHill
+
+Lyrics.
+
+Like this vid? Here's more like it:
+My Song 'Lean On': https://youtu.be/Cf4MTKKIUrE
+Eminem Gnat Music Video Reaction:
+https://youtu.be/cDsrQ1Swz4I 
+Blackpink Lovesick Girls First Ever Reaction: https://youtu.be/HS-U7rngXkI
+
+BTS Official  Mic Drop First Ever Reaction: https://youtu.be/zTsmop6LlZI
+Eminem Zeus Reaction: https://youtu.be/j5bR7iD5koM
+EZ Mil Panalo live on the USA Wish Bus: https://youtu.be/XjZDGmsnP8Q
+ NF Real Music Intro III Reaction: https://youtu.be/VDK0KrLxS6I
+NF Intro II: https://youtu.be/PQp89meF5BI
+Everything Great About Paid My Dues: https://youtu.be/Of8s9_vcBTI
+Rapper Reacts to Mansion: 
+https://youtu.be/3NrD1aTGgWk
+NF Oh Lord: https://youtu.be/a8opoXN35s8
+
+NF Reaction. NF Clouds. NF Real Music Clouds Music Video. 
+@NFVEVO @NFrealmusic 
+
+Do what you love, or don't do it at all. 
+
+Business:
+knoxhilldmv@gmail.com
+
+Knox Hill
+
+*Please note that subscriber giveaways are not real and meant for humor and entertainment purposes only. None of the products that are mentioned are physically given away.*
+
+*Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use. No copyright infringement intended. ALL RIGHTS BELONG TO THEIR RESPECTIVE OWNERS*
+
+#NF #Clouds #Reaction
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            Knox Hill
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="Mansion - NF (Lyrics)"
+            class="c7"
+            src="https://i.ytimg.com/vi/ibWdgkv1LSA/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              Mansion - NF (Lyrics)
+            </h2>
+            <span
+              class="c10"
+            >
+              Mansion by NF from his album Mansion.
+I CLAIM NO RIGHTS TO THIS SONG.
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            ThatCrazyChick
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="Hopsin - You Should've Known (feat. DAX)"
+            class="c7"
+            src="https://i.ytimg.com/vi/Y7pteqWRYu4/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              Hopsin - You Should've Known (feat. DAX)
+            </h2>
+            <span
+              class="c10"
+            >
+              Listen to the song here:  http://hyperurl.co/vcwhk3
+
+Director: Hopsin
+Producer: Moses Israel 
+Prod. Company: Bandwidth Bros. 
+1st AD: Roberto Ahumada 
+2nd AD: Sergio Ramirez
+DP: Russ Fraser
+Steadicam: Bill Hunt 
+Art Director: Day Hernandez 
+Color: Ntropic
+
+
+
+Follow Hopsin:
+Facebook: http://www.facebook.com/hellohopsin
+Instagram: @hopsin
+Twitter: @hopsin
+Website: http://www.undercoverprodigy.com
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            Hopsintv
+          </div>
+        </button>
+        <button
+          aria-label="card-container"
+          class="c6"
+        >
+          <img
+            alt="[ REACTION ] NF - LOST ft. Hopsin | THEY KILLED THIS!!! 🔥🔥"
+            class="c7"
+            src="https://i.ytimg.com/vi/EIx39N5DVm8/mqdefault.jpg"
+          />
+          <div
+            class="c8"
+          >
+            <h2
+              class="c9"
+            >
+              [ REACTION ] NF - LOST ft. Hopsin | THEY KILLED THIS!!! 🔥🔥
+            </h2>
+            <span
+              class="c10"
+            >
+              Rapper Reacts to NF - LOST ft. Hopsin | THEY KILLED THIS!!! 🔥🔥. JOIN THE KINGDOM TODAY FOR MORE MUSIC REACTION VIDEOS. 👈
+
+🔴 Subscribe For Official Music Video Reactions From All Genres.
+
+ADD ON SPOTIFY: https://open.spotify.com/artist/0lEvPwrWS9883d0jQ4SkA7?si=7OywbSsvSRqFt4nT1Ubvdg
+
+INQUIRIES: kingblitzbiz@gmail.com
+INSTAGRAM: http://www.instagram.com/kingblitz
+SOCIAL: http://www.linktr.ee/kingblitz 👈
+
+Paypal: http://www.paypal.me/kingblitz
+CashApp: https://cash.app/$kingblitzcash
+
+FAIR USE:
+*Copyright Disclaimer Under Section 107 of the Copyright Act 1976, allowance is made for "fair use" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. ALL RIGHTS BELONG TO THEIR RESPECTIVE OWNERS*
+
+#nf #reaction #hopsin
+            </span>
+          </div>
+          <div
+            class="c11"
+          >
+            KING BLITZ
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      class="c12"
+    >
+      <span
+        class="c13"
+      >
+        Piers and Alex Clash Over Prince Harry and Meghan’s Accusations of Racism | Good Morning Britain
+      </span>
+      <div
+        class="c14"
+      >
+        <span
+          class="c15"
+        >
+          7559872 Vistas
+        </span>
+        <span
+          class="c15"
+        >
+          74422 Me gusta
+        </span>
+        <span
+          class="c15"
+        >
+          13420 No me gusta
+        </span>
+      </div>
+      <div
+        class="c16"
+      >
+        <p>
+          Following the Duke and Duchess of Sussex’s landmark interview with Oprah Winfrey, today’s Good Morning Britain shared the reaction to the revelations, including those about Meghan’s suicidal thoughts and allegations of racism within the Royal family.
+        </p>
+        <p />
+        <p>
+          Subscribe now for more! http://bit.ly/1NbomQa
+        </p>
+        <p />
+        <p>
+          Broadcast on 09/03/2021
+        </p>
+        <p />
+        <p>
+          Like, follow and subscribe to Good Morning Britain!
+        </p>
+        <p />
+        <p>
+          The Good Morning Britain YouTube channel delivers you the news that you’re waking up to in the morning. From exclusive interviews with some of the biggest names in politics and showbiz to heartwarming human interest stories and unmissable watch again moments. 
+        </p>
+        <p />
+        <p>
+          Join Susanna Reid, Piers Morgan, Ben Shephard, Kate Garraway, Charlotte Hawkins and Sean Fletcher every weekday on ITV from 6am until 9 every weekday!
+        </p>
+        <p />
+        <p>
+          ITV Hub: https://bit.ly/37kf3wD
+        </p>
+        <p>
+          Website: http://bit.ly/1GsZuha
+        </p>
+        <p>
+          YouTube: http://bit.ly/1Ecy0g1
+        </p>
+        <p>
+          Facebook: http://on.fb.me/1HEDRMb
+        </p>
+        <p>
+          Twitter: http://bit.ly/1xdLqU3
+        </p>
+        <p />
+        <p>
+          http://www.itv.com
+        </p>
+        <p />
+        <p>
+          #GMB #PiersMorgan #SusannaReid
+        </p>
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;

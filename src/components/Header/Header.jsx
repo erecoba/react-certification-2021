@@ -43,7 +43,7 @@ const Header = ({ hideSearcher }) => {
 
   return (
     <Container>
-      <LogoContainer onClick={() => history.push('/')}>
+      <LogoContainer onClick={() => history.push('/')} aria-label="logo-container">
         <Logo src={logo} alt="logo" />
         <LogoName>Wizevideo</LogoName>
       </LogoContainer>
