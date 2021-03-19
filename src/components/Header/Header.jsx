@@ -36,8 +36,11 @@ const Header = ({ hideSearcher }) => {
   const [search, setSearch] = useState('');
   const { dispatch } = useYoutubeVideo();
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => retrieveVideosEffect({ search, dispatch, hideSearcher }), [search]);
+  useEffect(() => retrieveVideosEffect({ search, dispatch, hideSearcher }), [
+    search,
+    dispatch,
+    hideSearcher,
+  ]);
 
   const handleOnChange = (event) => setSearch(event.target.value);
 
