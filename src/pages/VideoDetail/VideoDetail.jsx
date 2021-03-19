@@ -21,6 +21,8 @@ import {
   LikesText,
 } from './VideoDetail.styled';
 
+const VIDEO_EMBED_URL = 'https://www.youtube.com/embed/';
+
 export const updateVideoSelectionEffect = ({ idVideo, dispatch }) => {
   const fetch = async () => {
     dispatch(await youtubeDetailVideo(idVideo));
@@ -43,7 +45,7 @@ const VideoDetail = () => {
       <Container>
         <Wrapper>
           <VideoContainer>
-            <VideoFrame src={`http://www.youtube.com/embed/${idVideo}`} frameBorder="0" />
+            <VideoFrame src={`${VIDEO_EMBED_URL}${idVideo}`} frameBorder="0" />
           </VideoContainer>
           <VideoRelalatedContaier>
             <TitleMayInterestYou>Tal vez te interese...</TitleMayInterestYou>
