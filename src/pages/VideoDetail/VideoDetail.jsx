@@ -36,8 +36,9 @@ const VideoDetail = () => {
   const { state, dispatch } = useYoutubeVideo();
   const { detailVideo, relatedVideos } = state;
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => updateVideoSelectionEffect({ idVideo, dispatch }), [idVideo]);
+  const originUrl = `${window.location.protocol}//${window.location.hostname}`;
+
+  useEffect(() => updateVideoSelectionEffect({ idVideo, dispatch }), [idVideo, dispatch]);
 
   return (
     <>
@@ -45,7 +46,10 @@ const VideoDetail = () => {
       <Container>
         <Wrapper>
           <VideoContainer>
-            <VideoFrame src={`${VIDEO_EMBED_URL}${idVideo}`} frameBorder="0" />
+            <VideoFrame
+              src={`${VIDEO_EMBED_URL}${idVideo}?origin=${originUrl}`}
+              frameBorder="0"
+            />
           </VideoContainer>
           <VideoRelalatedContaier>
             <TitleMayInterestYou>Tal vez te interese...</TitleMayInterestYou>
