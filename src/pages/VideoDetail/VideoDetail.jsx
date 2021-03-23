@@ -33,12 +33,15 @@ export const updateVideoSelectionEffect = ({ idVideo, dispatch }) => {
 
 const VideoDetail = () => {
   const { idVideo } = useParams();
-  const { state, dispatch } = useYoutubeVideo();
-  const { detailVideo, relatedVideos } = state;
+  const { youtubeState, youtubeDispatch } = useYoutubeVideo();
+  const { detailVideo, relatedVideos } = youtubeState;
 
   const originUrl = `${window.location.protocol}//${window.location.hostname}`;
 
-  useEffect(() => updateVideoSelectionEffect({ idVideo, dispatch }), [idVideo, dispatch]);
+  useEffect(() => updateVideoSelectionEffect({ idVideo, youtubeDispatch }), [
+    idVideo,
+    youtubeDispatch,
+  ]);
 
   return (
     <>

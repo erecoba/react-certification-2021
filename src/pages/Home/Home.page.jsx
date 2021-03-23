@@ -6,8 +6,8 @@ import { Container } from './Home.styled';
 import { useYoutubeVideo } from '../../state/Provider';
 
 function HomePage() {
-  const { state } = useYoutubeVideo();
-  const { videos } = state;
+  const { youtubeState } = useYoutubeVideo();
+  const { videos } = youtubeState;
 
   return (
     <>

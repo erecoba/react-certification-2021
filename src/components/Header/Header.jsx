@@ -34,11 +34,11 @@ export const retrieveVideosEffect = ({ search, dispatch, hideSearcher }) => {
 const Header = ({ hideSearcher }) => {
   const history = useHistory();
   const [search, setSearch] = useState('');
-  const { dispatch } = useYoutubeVideo();
+  const { youtubeDispatch } = useYoutubeVideo();
 
-  useEffect(() => retrieveVideosEffect({ search, dispatch, hideSearcher }), [
+  useEffect(() => retrieveVideosEffect({ search, youtubeDispatch, hideSearcher }), [
     search,
-    dispatch,
+    youtubeDispatch,
     hideSearcher,
   ]);
 
