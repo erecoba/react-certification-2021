@@ -23,10 +23,10 @@ import {
 
 const VIDEO_EMBED_URL = 'https://www.youtube.com/embed/';
 
-export const updateVideoSelectionEffect = ({ idVideo, dispatch }) => {
+export const updateVideoSelectionEffect = ({ idVideo, youtubeDispatch }) => {
   const fetch = async () => {
-    dispatch(await youtubeDetailVideo(idVideo));
-    dispatch(await youtubeRelatedVideos(idVideo));
+    youtubeDispatch(await youtubeDetailVideo(idVideo));
+    youtubeDispatch(await youtubeRelatedVideos(idVideo));
   };
   fetch();
 };

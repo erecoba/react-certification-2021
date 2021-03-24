@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import {
   Container,
@@ -16,33 +16,36 @@ import SeachIcon from '../../ui/icons/Search';
 import logo from '../../assets/img/wizeline-logo.png';
 
 import { youtubeGetVideos, youtubeSearchVideos } from '../../state/actions/youtube';
-import { useYoutubeVideo } from '../../state/Provider';
+import { setSearching } from '../../state/actions/general';
+import { useYoutubeVideo, useGeneral } from '../../state/Provider';
 
-export const retrieveVideosEffect = ({ search, dispatch, hideSearcher }) => {
+export const retrieveVideosEffect = ({ searching, youtubeDispatch, hideSearcher }) => {
   if (hideSearcher) return;
 
   const retriveVideosFetch = async () => {
-    if (search && search.trim()) {
-      dispatch(await youtubeSearchVideos(search));
+    if (searching && searching.trim()) {
+      youtubeDispatch(await youtubeSearchVideos(searching));
     } else {
-      dispatch(await youtubeGetVideos());
+      youtubeDispatch(await youtubeGetVideos());
     }
   };
   retriveVideosFetch();
 };
 
 const Header = ({ hideSearcher }) => {
-  const history = useHistory();
-  const [search, setSearch] = useState('');
   const { youtubeDispatch } = useYoutubeVideo();
+  const { generalState, generalDispatch } = useGeneral();
+  const { searching } = generalState;
 
-  useEffect(() => retrieveVideosEffect({ search, youtubeDispatch, hideSearcher }), [
-    search,
+  const history = useHistory();
+
+  useEffect(() => retrieveVideosEffect({ searching, youtubeDispatch, hideSearcher }), [
+    searching,
     youtubeDispatch,
     hideSearcher,
   ]);
 
-  const handleOnChange = (event) => setSearch(event.target.value);
+  const handleOnChange = (event) => generalDispatch(setSearching(event.target.value));
 
   return (
     <Container>
@@ -56,7 +59,7 @@ const Header = ({ hideSearcher }) => {
           <Input
             placeholder="Buscar"
             icon={<SeachIcon />}
-            value={search}
+            value={searching}
             onChange={handleOnChange}
           />
         )}
