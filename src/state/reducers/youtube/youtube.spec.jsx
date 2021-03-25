@@ -1,5 +1,5 @@
 import youtubeReducer, { initialState } from './youtube';
-import * as types from '../types';
+import * as types from '../../types';
 
 describe('State - Reducer - Youtube', () => {
   it('should execute YOUTUBE_GET_VIDEOS case', () => {

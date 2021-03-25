@@ -97,7 +97,7 @@ const Header = ({ hideSearcher }) => {
             checked={checkboxStatus}
             onChange={handleOnChecked}
           />
-          <LabelCheckToggle for="toggle-theme" checked={checkboxStatus}>
+          <LabelCheckToggle htmlFor="toggle-theme" checked={checkboxStatus}>
             <LabelCheckToggleFeat checked={checkboxStatus} />
           </LabelCheckToggle>
         </CheckToggleWrapper>
