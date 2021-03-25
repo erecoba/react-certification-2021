@@ -16,7 +16,7 @@ function HomePage() {
         {videos.map((video) => (
           <Card
             key={video.id}
-            id={video.id}
+            id={typeof video.id === 'object' ? video.id.videoId : video.id}
             title={video.snippet.title}
             description={video.snippet.description}
             imgUrl={video.snippet.thumbnails.medium.url}
