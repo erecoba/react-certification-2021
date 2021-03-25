@@ -80,6 +80,7 @@ const RankingContainer = styled.div`
 const LikesText = styled.span`
   font-size: 1rem;
   margin-right: 10px;
+  color: ${({ theme }) => theme.label};
 `;
 
 export {
