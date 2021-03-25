@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import {
   Container,
@@ -7,6 +7,10 @@ import {
   LogoName,
   SearchContainer,
   AvatarContainer,
+  CheckToggleWrapper,
+  CheckToggle,
+  LabelCheckToggle,
+  LabelCheckToggleFeat,
 } from './Header.styled';
 
 import Input from '../Input';
@@ -16,8 +20,17 @@ import SeachIcon from '../../ui/icons/Search';
 import logo from '../../assets/img/wizeline-logo.png';
 
 import { youtubeGetVideos, youtubeSearchVideos } from '../../state/actions/youtube';
-import { setSearching } from '../../state/actions/general';
+import {
+  setSearching,
+  changeLightTheme,
+  changeDarkTheme,
+} from '../../state/actions/general';
 import { useYoutubeVideo, useGeneral } from '../../state/Provider';
+
+const THEMES = {
+  LIGHT: 'light',
+  DARK: 'dark',
+};
 
 export const retrieveVideosEffect = ({ searching, youtubeDispatch, hideSearcher }) => {
   if (hideSearcher) return;
@@ -35,8 +48,9 @@ export const retrieveVideosEffect = ({ searching, youtubeDispatch, hideSearcher 
 const Header = ({ hideSearcher }) => {
   const { youtubeDispatch } = useYoutubeVideo();
   const { generalState, generalDispatch } = useGeneral();
-  const { searching } = generalState;
+  const { searching, theme } = generalState;
 
+  const [checkboxStatus, setCheckboxStatus] = useState(theme !== THEMES.LIGHT);
   const history = useHistory();
 
   useEffect(() => retrieveVideosEffect({ searching, youtubeDispatch, hideSearcher }), [
@@ -45,7 +59,17 @@ const Header = ({ hideSearcher }) => {
     hideSearcher,
   ]);
 
-  const handleOnChange = (event) => generalDispatch(setSearching(event.target.value));
+  const handleOnChecked = (event) => {
+    if (event.target.checked) {
+      generalDispatch(changeDarkTheme());
+    } else {
+      generalDispatch(changeLightTheme());
+    }
+    setCheckboxStatus(event.target.checked);
+  };
+
+  const handleOnChangeInput = (event) =>
+    generalDispatch(setSearching(event.target.value));
 
   return (
     <Container>
@@ -60,12 +84,23 @@ const Header = ({ hideSearcher }) => {
             placeholder="Buscar"
             icon={<SeachIcon />}
             value={searching}
-            onChange={handleOnChange}
+            onChange={handleOnChangeInput}
           />
         )}
       </SearchContainer>
 
       <AvatarContainer>
+        <CheckToggleWrapper>
+          <CheckToggle
+            type="checkbox"
+            id="toggle-theme"
+            checked={checkboxStatus}
+            onChange={handleOnChecked}
+          />
+          <LabelCheckToggle for="toggle-theme" checked={checkboxStatus}>
+            <LabelCheckToggleFeat checked={checkboxStatus} />
+          </LabelCheckToggle>
+        </CheckToggleWrapper>
         <Avatar clickable />
       </AvatarContainer>
     </Container>

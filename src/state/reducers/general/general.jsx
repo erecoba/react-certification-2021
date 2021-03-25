@@ -12,7 +12,12 @@ const generalReducer = (state = initialState, action) => {
         ...state,
         searching: action.payload.searching,
       };
-    case types.GENERAL_CHANGE_THEME:
+    case types.GENERAL_CHANGE_THEME_DARK:
+      return {
+        ...state,
+        theme: action.payload.theme,
+      };
+    case types.GENERAL_CHANGE_THEME_LIGHT:
       return {
         ...state,
         theme: action.payload.theme,

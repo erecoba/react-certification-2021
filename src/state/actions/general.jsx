@@ -1,9 +1,16 @@
 import * as types from '../types';
 
-export const changeTheme = (theme) => {
+export const changeDarkTheme = () => {
   return {
-    payload: { theme },
-    type: types.GENERAL_CHANGE_THEME,
+    payload: { theme: 'dark' },
+    type: types.GENERAL_CHANGE_THEME_DARK,
+  };
+};
+
+export const changeLightTheme = () => {
+  return {
+    payload: { theme: 'light' },
+    type: types.GENERAL_CHANGE_THEME_LIGHT,
   };
 };
 
