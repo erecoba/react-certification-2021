@@ -76,7 +76,7 @@ const CheckToggleWrapper = styled.div`
       background-color: rgba(255, 255, 255, 0.1);
       box-shadow: #fff 20px -3px 0 0, #fff 2px 0px 0 1px,
         rgba(255, 255, 255, 0.1) 28px 8px 0 1px, #fff 22px 14px 0 0,
-        rgba(255, 255, 255, 0.1) 10px 14px 0 1.5px, #fff 2px 28px 0 1px;
+        rgba(255, 255, 255, 0.1) 10px 14px 0 1.5px, #fff 2px 18px 0 1px;
     }
   }
   @keyframes bounceIn {
@@ -225,7 +225,7 @@ const LabelCheckToggleFeat = styled.span`
           box-shadow: rgba(255, 255, 255, 0.1) 20px -3px 0 0,
             rgba(255, 255, 255, 0.1) 2px 0px 0 1px, #fff 28px 8px 0 1px,
             rgba(255, 255, 255, 0.1) 22px 14px 0 0, #fff 10px 14px 0 1.5px,
-            rgba(255, 255, 255, 0.1) 2px 28px 0 1px;
+            rgba(255, 255, 255, 0.1) 2px 18px 0 1px;
           animation: starry_star 5s ease-in-out infinite;
           &:before {
             position: absolute;
@@ -236,7 +236,7 @@ const LabelCheckToggleFeat = styled.span`
             background-color: ${$toggleBtnBgColorNight};
             border-radius: 50%;
             border: 1px solid ${$toggleBtnBorderColorNight};
-            box-shadow: ${$toggleBtnBorderColorNight} -28px 0 0 -3px,
+            box-shadow: ${$toggleBtnBorderColorNight} -12px 0 0 -3px,
               ${$toggleBtnBorderColorNight} -8px 10px 0 -2px;
             transform-origin: -6px 130%;
           }
