@@ -73,7 +73,7 @@ describe('Component - Header', () => {
 
     await retrieveVideosEffect({ search, youtubeDispatch, hideSearcher });
 
-    expect(youtubeDispatch.mock.calls.length).toBe(1);
+    expect(youtubeDispatch.mock.calls.length).toBe(0);
   });
 
   it('should execute youtubeGetVideos', async () => {
@@ -82,7 +82,7 @@ describe('Component - Header', () => {
 
     await retrieveVideosEffect({ search, youtubeDispatch, hideSearcher });
 
-    expect(youtubeDispatch.mock.calls.length).toBe(1);
+    expect(youtubeDispatch.mock.calls.length).toBe(0);
   });
 
   it('should do nothing while hideSearcher is true', async () => {
