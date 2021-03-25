@@ -525,6 +525,7 @@ exports[`Pages - Video detail should render the component 1`] = `
 .c15 {
   font-size: 1rem;
   margin-right: 10px;
+  color: #000;
 }
 
 <main
