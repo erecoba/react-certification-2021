@@ -36,6 +36,7 @@ const InputStyle = styled.input`
   background-clip: padding-box;
   appearance: none;
   font-family: 'Roobert', sans-serif;
+  color: ${({ theme }) => theme.label};
 
   border-radius: 8px;
 
@@ -43,6 +44,7 @@ const InputStyle = styled.input`
     outline: none;
     border-color: ${({ theme }) => theme.inputHoverBorder};
     background-color: ${({ theme }) => theme.inputHoverBg};
+    color: ${({ theme }) => theme.colors.black};
   }
 `;
 

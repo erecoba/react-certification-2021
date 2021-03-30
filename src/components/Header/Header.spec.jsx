@@ -11,6 +11,8 @@ import MockVideosSearch from '../../mocks/videos-searching.json';
 import MockVideosRelated from '../../mocks/videos-related.json';
 import MockVideosDetail from '../../mocks/video-detail.json';
 
+import { LabelCheckToggle, LabelCheckToggleFeat } from './Header.styled';
+
 jest.mock('../../services', () => {
   return jest.fn(() => ({
     youtube: {
@@ -26,9 +28,9 @@ describe('Component - Header', () => {
   let theme;
   let props;
 
-  const dispatch = jest.fn();
+  const youtubeDispatch = jest.fn();
   beforeEach(() => {
-    dispatch.mockReset();
+    youtubeDispatch.mockReset();
     theme = {
       colors: {
         white: '#fff',
@@ -69,27 +71,27 @@ describe('Component - Header', () => {
     const search = 'minecraft';
     const hideSearcher = false;
 
-    await retrieveVideosEffect({ search, dispatch, hideSearcher });
+    await retrieveVideosEffect({ search, youtubeDispatch, hideSearcher });
 
-    expect(dispatch.mock.calls.length).toBe(0);
+    expect(youtubeDispatch.mock.calls.length).toBe(0);
   });
 
   it('should execute youtubeGetVideos', async () => {
     const search = '';
     const hideSearcher = false;
 
-    await retrieveVideosEffect({ search, dispatch, hideSearcher });
+    await retrieveVideosEffect({ search, youtubeDispatch, hideSearcher });
 
-    expect(dispatch.mock.calls.length).toBe(0);
+    expect(youtubeDispatch.mock.calls.length).toBe(0);
   });
 
   it('should do nothing while hideSearcher is true', async () => {
     const search = '';
     const hideSearcher = true;
 
-    await retrieveVideosEffect({ search, dispatch, hideSearcher });
+    await retrieveVideosEffect({ search, youtubeDispatch, hideSearcher });
 
-    expect(dispatch).toHaveBeenCalledTimes(0);
+    expect(youtubeDispatch).toHaveBeenCalledTimes(0);
   });
 
   it('should click on logo to go home', async () => {
@@ -108,5 +110,32 @@ describe('Component - Header', () => {
 
     const logoHref = wrapper.getByLabelText('logo-container');
     fireEvent.click(logoHref);
+  });
+
+  it('should have background color dark', () => {
+    const wrapper = render(<LabelCheckToggle data-testid="testing" checked />);
+
+    expect(wrapper.getByTestId('testing')).toHaveStyleRule('background-color', '#3c4145');
+  });
+
+  it('should have background color light', () => {
+    const wrapper = render(<LabelCheckToggle data-testid="testing" />);
+
+    expect(wrapper.getByTestId('testing')).toHaveStyleRule('background-color', '#9ee3fb');
+  });
+
+  it('should have dark animation', () => {
+    const wrapper = render(<LabelCheckToggleFeat data-testid="testing" checked />);
+
+    expect(wrapper.getByTestId('testing')).toHaveStyleRule(
+      'animation',
+      'starry_star 5s ease-in-out infinite'
+    );
+  });
+
+  it('should have light animation', () => {
+    const wrapper = render(<LabelCheckToggleFeat data-testid="testing" />);
+
+    expect(wrapper.getByTestId('testing')).toHaveStyleRule('animation', 'none');
   });
 });

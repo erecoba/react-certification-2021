@@ -10,6 +10,14 @@ const theme = {
     base: colors.base,
     background: '#fff',
     label: '#000',
+    bodyBackground: `linear-gradient(
+      120deg,
+      #eea2a2 0,
+      #bbc1bf 19%,
+      #57c6e1 42%,
+      #b49fda 79%,
+      #7ac5d8 100%
+    )`,
 
     inputHoverBorder: colors.base,
     inputHoverBg: colors.gray1,
@@ -18,8 +26,16 @@ const theme = {
   },
   dark: {
     base: colors.base,
-    background: '#000',
+    background: '#2d2d2d',
     label: '#fff',
+    bodyBackground: `linear-gradient(
+      120deg,
+      #c08282 0,
+      #929796 19%,
+      #367c8d 42%,
+      #665a7e 79%,
+      #4e7f8b 100%
+    )`,
 
     inputHoverBorder: colors.base,
     inputHoverBg: colors.gray1,

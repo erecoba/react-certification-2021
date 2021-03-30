@@ -23,22 +23,25 @@ import {
 
 const VIDEO_EMBED_URL = 'https://www.youtube.com/embed/';
 
-export const updateVideoSelectionEffect = ({ idVideo, dispatch }) => {
+export const updateVideoSelectionEffect = ({ idVideo, youtubeDispatch }) => {
   const fetch = async () => {
-    dispatch(await youtubeDetailVideo(idVideo));
-    dispatch(await youtubeRelatedVideos(idVideo));
+    youtubeDispatch(await youtubeDetailVideo(idVideo));
+    youtubeDispatch(await youtubeRelatedVideos(idVideo));
   };
   fetch();
 };
 
 const VideoDetail = () => {
   const { idVideo } = useParams();
-  const { state, dispatch } = useYoutubeVideo();
-  const { detailVideo, relatedVideos } = state;
+  const { youtubeState, youtubeDispatch } = useYoutubeVideo();
+  const { detailVideo, relatedVideos } = youtubeState;
 
   const originUrl = `${window.location.protocol}//${window.location.hostname}`;
 
-  useEffect(() => updateVideoSelectionEffect({ idVideo, dispatch }), [idVideo, dispatch]);
+  useEffect(() => updateVideoSelectionEffect({ idVideo, youtubeDispatch }), [
+    idVideo,
+    youtubeDispatch,
+  ]);
 
   return (
     <>

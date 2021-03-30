@@ -1,8 +1,8 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
-import Provider from '../../state/Provider';
+import Provider, { useGeneral } from '../../state/Provider';
 import AuthProvider from '../../providers/Auth';
 import HomePage from '../../pages/Home';
 import LoginPage from '../../pages/Login';
@@ -36,33 +36,46 @@ function App() {
 
   return (
     <Provider>
-      <ThemeProvider theme={theme.light}>
-        <BrowserRouter>
-          <AuthProvider>
-            <Layout>
-              <Switch>
-                <Route exact path="/">
-                  <HomePage />
-                </Route>
-                <Route exact path="/login">
-                  <LoginPage />
-                </Route>
-                <Route exact path="/videos/:idVideo">
-                  <VideoDetailPage />
-                </Route>
-                <Private exact path="/secret">
-                  <SecretPage />
-                </Private>
-                <Route path="*">
-                  <NotFound />
-                </Route>
-              </Switch>
-              <Fortune />
-            </Layout>
-          </AuthProvider>
-        </BrowserRouter>
-      </ThemeProvider>
+      <ThemeApp />
     </Provider>
+  );
+}
+
+function ThemeApp() {
+  const { generalState } = useGeneral();
+  const stateTheme = generalState.theme;
+
+  useEffect(() =>
+    document.body.style.setProperty('background-image', theme[stateTheme].bodyBackground)
+  );
+
+  return (
+    <ThemeProvider theme={theme[stateTheme]}>
+      <BrowserRouter>
+        <AuthProvider>
+          <Layout>
+            <Switch>
+              <Route exact path="/">
+                <HomePage />
+              </Route>
+              <Route exact path="/login">
+                <LoginPage />
+              </Route>
+              <Route exact path="/videos/:idVideo">
+                <VideoDetailPage />
+              </Route>
+              <Private exact path="/secret">
+                <SecretPage />
+              </Private>
+              <Route path="*">
+                <NotFound />
+              </Route>
+            </Switch>
+            <Fortune />
+          </Layout>
+        </AuthProvider>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
