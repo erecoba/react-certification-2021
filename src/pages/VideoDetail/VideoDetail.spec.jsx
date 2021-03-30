@@ -1,9 +1,11 @@
 import React from 'react';
 import { render, act } from '@testing-library/react';
 import 'jest-styled-components';
+import { ThemeProvider } from 'styled-components';
+import { BrowserRouter } from 'react-router-dom';
 
 import Provider from '../../state/Provider';
-import App from './App.component';
+import VideoDetail from './VideoDetail';
 import MockVideosPopular from '../../mocks/videos-popular.json';
 import MockVideosSearch from '../../mocks/videos-searching.json';
 import MockVideosRelated from '../../mocks/videos-related.json';
@@ -20,23 +22,49 @@ jest.mock('../../services', () => {
   }));
 });
 
-describe('App', () => {
-  it('should render correctly inside button', async () => {
+describe('Pages - Video detail', () => {
+  let props;
+  const theme = {
+    base: '#f0f',
+    background: '#fff',
+    label: '#000',
+
+    inputHoverBorder: '#f0f',
+    inputHoverBg: '#ff0',
+
+    colors: {
+      white: '#fff',
+    },
+  };
+
+  beforeEach(() => {
+    props = {};
+  });
+
+  it('should render the component', async () => {
     let wrapper;
     await act(async () => {
       wrapper = render(
-        <Provider>
-          <App />
-        </Provider>
+        <BrowserRouter>
+          <ThemeProvider theme={theme}>
+            <Provider>
+              <VideoDetail {...props} />
+            </Provider>
+          </ThemeProvider>
+        </BrowserRouter>
       );
     });
 
     let fragment;
     await act(async () => {
       fragment = wrapper.asFragment(
-        <Provider>
-          <App />
-        </Provider>
+        <BrowserRouter>
+          <ThemeProvider theme={theme}>
+            <Provider>
+              <VideoDetail {...props} />
+            </Provider>
+          </ThemeProvider>
+        </BrowserRouter>
       );
     });
 
