@@ -15,7 +15,16 @@ import {
   FavStar,
 } from './Card.styled';
 
-const Card = ({ id, title, description, imgUrl, channelTitle, isFluid, canFavorite }) => {
+const Card = ({
+  id,
+  title,
+  description,
+  imgUrl,
+  channelTitle,
+  isFluid,
+  canFavorite,
+  linkBase = 'videos',
+}) => {
   const history = useHistory();
   const [isShown, setIsShown] = useState(false);
   const { sessionState } = useSession();
@@ -44,10 +53,14 @@ const Card = ({ id, title, description, imgUrl, channelTitle, isFluid, canFavori
       onMouseEnter={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}
     >
-      <ImageFit src={imgUrl} alt={title} onClick={() => history.push(`/videos/${id}`)} />
+      <ImageFit
+        src={imgUrl}
+        alt={title}
+        onClick={() => history.push(`/${linkBase}/${id}`)}
+      />
       <GradientContainer
         aria-label="card-container"
-        onClick={() => history.push(`/videos/${id}`)}
+        onClick={() => history.push(`/${linkBase}/${id}`)}
       >
         <Title>{title}</Title>
         <Description>{description}</Description>

@@ -22,6 +22,7 @@ const FavoritePage = () => {
               description={video.description}
               imgUrl={video.imgUrl}
               channelTitle={video.channelTitle}
+              linkBase="favorites"
             />
           ))
         ) : (

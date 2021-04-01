@@ -7,9 +7,9 @@ import AuthProvider from '../../providers/Auth';
 import HomePage from '../../pages/Home';
 import LoginPage from '../../pages/Login';
 import NotFound from '../../pages/NotFound';
-import SecretPage from '../../pages/Secret';
 import VideoDetailPage from '../../pages/VideoDetail';
 import FavoritePage from '../../pages/Favorite';
+import FavoriteDetailPage from '../../pages/FavoriteDetail';
 import Private from '../Private';
 import Fortune from '../Fortune';
 import Layout from '../Layout';
@@ -64,7 +64,7 @@ function Routing() {
           <FavoritePage />
         </Private>
         <Private exact path="/favorites/:idVideo">
-          <SecretPage />
+          <FavoriteDetailPage />
         </Private>
         <Route path="*">
           <NotFound />
