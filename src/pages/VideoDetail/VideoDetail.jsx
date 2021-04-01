@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
+import StarIcon from '../../ui/icons/Star';
+import { FavoriteProcess } from '../../utils/favoriteProcess';
 import Header from '../../components/Header';
 import Card from '../../components/Card';
+import Avatar from '../../components/Avatar';
 
-import { useYoutubeVideo } from '../../state/Provider';
+import { useYoutubeVideo, useSession } from '../../state/Provider';
 import { youtubeRelatedVideos, youtubeDetailVideo } from '../../state/actions/youtube';
 
 import {
@@ -35,6 +38,7 @@ const VideoDetail = () => {
   const { idVideo } = useParams();
   const { youtubeState, youtubeDispatch } = useYoutubeVideo();
   const { detailVideo, relatedVideos } = youtubeState;
+  const { sessionState } = useSession();
 
   const originUrl = `${window.location.protocol}//${window.location.hostname}`;
 
@@ -42,6 +46,23 @@ const VideoDetail = () => {
     idVideo,
     youtubeDispatch,
   ]);
+
+  const handleFavoriteVideo = () => {
+    if (!sessionState.user) {
+      // eslint-disable-next-line no-alert
+      alert('Log in before to add a favorite video');
+      return;
+    }
+    const videoFavorite = new FavoriteProcess({
+      id: idVideo,
+      title: detailVideo.snippet.title,
+      description: detailVideo.snippet.description,
+      imgUrl: detailVideo.snippet.thumbnails.medium.url,
+      channelTitle: detailVideo.snippet.channelTitle,
+    });
+
+    videoFavorite.addOrRemoveVideo().updateLocalStorage().displayMessage();
+  };
 
   return (
     <>
@@ -61,6 +82,7 @@ const VideoDetail = () => {
                 relatedVideo.snippet && (
                   <Card
                     isFluid
+                    canFavorite
                     key={relatedVideo.etag}
                     id={relatedVideo.id.videoId}
                     title={relatedVideo.snippet.title}
@@ -83,6 +105,11 @@ const VideoDetail = () => {
             </LikesText>
             <LikesText>
               {detailVideo.statistics && detailVideo.statistics.dislikeCount} No me gusta
+            </LikesText>
+            <LikesText>
+              <Avatar clickable onClick={handleFavoriteVideo}>
+                <StarIcon color="white" />
+              </Avatar>
             </LikesText>
           </RankingContainer>
           <DescriptionVideo>

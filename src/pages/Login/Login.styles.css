@@ -36,12 +36,3 @@
   border: 1px solid white;
   background-color: rgba(0, 0, 0, 0.1);
 }
-
-.login-form button[type='submit'] {
-  width: 5rem;
-  margin-top: 1rem;
-  padding: 0.4rem 0.6rem;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 3px;
-}

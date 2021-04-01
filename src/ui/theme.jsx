@@ -21,6 +21,8 @@ const theme = {
 
     inputHoverBorder: colors.base,
     inputHoverBg: colors.gray1,
+    blurBackground: '#cdecf578',
+    error: '#f00',
 
     colors,
   },
@@ -39,6 +41,8 @@ const theme = {
 
     inputHoverBorder: colors.base,
     inputHoverBg: colors.gray1,
+    blurBackground: '#3d474a78',
+    error: '#f00',
 
     colors,
   },
