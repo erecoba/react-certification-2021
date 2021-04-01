@@ -31,8 +31,8 @@ function LoginPage() {
   const history = useHistory();
   const { sessionState, sessionDispatch } = useSession();
 
-  const [user, setUser] = useState('wizeline'); // TODO: REMOVE IT
-  const [pass, setPass] = useState('Rocks!'); // TODO: REMOVE IT
+  const [user, setUser] = useState(''); // TODO: REMOVE IT
+  const [pass, setPass] = useState(''); // TODO: REMOVE IT
   const [missingError, setMissingError] = useState({
     show: false,
     message: 'Type user and password',
