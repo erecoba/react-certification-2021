@@ -52,6 +52,7 @@ const Card = ({
       isFluid={isFluid}
       onMouseEnter={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}
+      aria-label="card-wrapper"
     >
       <ImageFit
         src={imgUrl}
@@ -67,7 +68,7 @@ const Card = ({
       </GradientContainer>
       <TagChannel>{channelTitle}</TagChannel>
       {canFavorite && isShown && (
-        <FavStar onClick={handleAddFavorite}>
+        <FavStar onClick={handleAddFavorite} aria-label="favorite-button">
           <StarIcon color="white" />
         </FavStar>
       )}

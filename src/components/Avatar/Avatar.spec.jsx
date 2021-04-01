@@ -2,10 +2,16 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import 'jest-styled-components';
 import { ThemeProvider } from 'styled-components';
+import { Router } from 'react-router-dom';
+import { createMemoryHistory } from 'history';
 
 import Avatar from './Avatar';
 
 describe('Avatar', () => {
+  let history;
+  beforeEach(() => {
+    history = createMemoryHistory();
+  });
   it('should render correctly inside div', () => {
     const theme = {
       colors: {
@@ -14,7 +20,9 @@ describe('Avatar', () => {
     };
     const { container } = render(
       <ThemeProvider theme={theme}>
-        <Avatar />
+        <Router history={history}>
+          <Avatar />
+        </Router>
       </ThemeProvider>
     );
 
@@ -29,7 +37,9 @@ describe('Avatar', () => {
     };
     const { container } = render(
       <ThemeProvider theme={theme}>
-        <Avatar clickable />
+        <Router history={history}>
+          <Avatar clickable />
+        </Router>
       </ThemeProvider>
     );
 

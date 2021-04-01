@@ -3,7 +3,6 @@ import { HashRouter, Switch, Route, useLocation } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import Provider, { useGeneral } from '../../state/Provider';
-import AuthProvider from '../../providers/Auth';
 import HomePage from '../../pages/Home';
 import LoginPage from '../../pages/Login';
 import NotFound from '../../pages/NotFound';
@@ -11,29 +10,28 @@ import VideoDetailPage from '../../pages/VideoDetail';
 import FavoritePage from '../../pages/Favorite';
 import FavoriteDetailPage from '../../pages/FavoriteDetail';
 import Private from '../Private';
-import Fortune from '../Fortune';
 import Layout from '../Layout';
 import { random } from '../../utils/fns';
 import theme from '../../ui/theme';
 import { clearLocal } from '../../utils/localstorage';
+
+export function rotateBackground(body) {
+  const xPercent = random(100);
+  const yPercent = random(100);
+  body.style.setProperty('--bg-position', `${xPercent}% ${yPercent}%`);
+}
 
 function App() {
   useLayoutEffect(() => {
     const { body } = document;
     clearLocal();
 
-    function rotateBackground() {
-      const xPercent = random(100);
-      const yPercent = random(100);
-      body.style.setProperty('--bg-position', `${xPercent}% ${yPercent}%`);
-    }
-
-    const intervalId = setInterval(rotateBackground, 3000);
-    body.addEventListener('click', rotateBackground);
+    const intervalId = setInterval(() => rotateBackground(body), 3000);
+    body.addEventListener('click', () => rotateBackground(body));
 
     return () => {
       clearInterval(intervalId);
-      body.removeEventListener('click', rotateBackground);
+      body.removeEventListener('click', () => rotateBackground(body));
     };
   }, []);
 
@@ -86,12 +84,9 @@ function ThemeApp() {
   return (
     <ThemeProvider theme={theme[stateTheme]}>
       <HashRouter>
-        <AuthProvider>
-          <Layout>
-            <Routing />
-            <Fortune />
-          </Layout>
-        </AuthProvider>
+        <Layout>
+          <Routing />
+        </Layout>
       </HashRouter>
     </ThemeProvider>
   );

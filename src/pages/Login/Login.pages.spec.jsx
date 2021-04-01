@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 
-import FavoriteDetailPage from './FavoriteDetail';
+import LoginPage from './Login.page';
 
 import Provider from '../../state/Provider';
 
@@ -50,7 +50,7 @@ describe('Pages - Favorite', () => {
         <ThemeProvider theme={theme}>
           <Provider>
             <Router history={history}>
-              <FavoriteDetailPage {...props} />
+              <LoginPage {...props} />
             </Router>
           </Provider>
         </ThemeProvider>
@@ -63,7 +63,7 @@ describe('Pages - Favorite', () => {
         <ThemeProvider>
           <Provider>
             <Router history={history}>
-              <FavoriteDetailPage {...props} />
+              <LoginPage {...props} />
             </Router>
           </Provider>
         </ThemeProvider>

@@ -416,48 +416,53 @@ exports[`Home Page should render correctly Home 1`] = `
           />
         </label>
       </div>
-      <div
-        class="c17"
+      <a
+        class=""
+        href="/login"
       >
-        <svg
-          class="c18"
-          color="white"
-          focusable="false"
-          viewBox="0 0 24 24"
+        <div
+          class="c17"
         >
-          <path
-            d="M0 0h24v24H0V0z"
-            fill="none"
-          />
-          <path
-            d="M0 0h24v24H0V0z"
-            fill="none"
-          />
-          <circle
-            cx="15.5"
-            cy="9.5"
-            r="1.5"
-          />
-          <circle
-            cx="8.5"
-            cy="9.5"
-            r="1.5"
-          />
-          <circle
-            cx="15.5"
-            cy="9.5"
-            r="1.5"
-          />
-          <circle
-            cx="8.5"
-            cy="9.5"
-            r="1.5"
-          />
-          <path
-            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-2.5c2.33 0 4.32-1.45 5.12-3.5h-1.67c-.69 1.19-1.97 2-3.45 2s-2.75-.81-3.45-2H6.88c.8 2.05 2.79 3.5 5.12 3.5z"
-          />
-        </svg>
-      </div>
+          <svg
+            class="c18"
+            color="white"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <circle
+              cx="15.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <circle
+              cx="8.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <circle
+              cx="15.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <circle
+              cx="8.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-2.5c2.33 0 4.32-1.45 5.12-3.5h-1.67c-.69 1.19-1.97 2-3.45 2s-2.75-.81-3.45-2H6.88c.8 2.05 2.79 3.5 5.12 3.5z"
+            />
+          </svg>
+        </div>
+      </a>
     </div>
   </nav>
   .c1 {
@@ -573,7 +578,7 @@ exports[`Home Page should render correctly Home 1`] = `
     class="c0"
   >
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -582,6 +587,7 @@ exports[`Home Page should render correctly Home 1`] = `
         src="https://i.ytimg.com/vi/AeaR5QbXgpM/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -644,7 +650,7 @@ Higher and higher and Higher
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -653,6 +659,7 @@ Higher and higher and Higher
         src="https://i.ytimg.com/vi/sG9rX6Ifzhw/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -693,7 +700,7 @@ http://www.itv.com
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -702,6 +709,7 @@ http://www.itv.com
         src="https://i.ytimg.com/vi/pIQIKIDZJjc/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -739,7 +747,7 @@ youtube: https://www.youtube.com/channel/UCRrqYoW62tYjqUWh6GzAuwg
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -748,6 +756,7 @@ youtube: https://www.youtube.com/channel/UCRrqYoW62tYjqUWh6GzAuwg
         src="https://i.ytimg.com/vi/jJdlgKzVsnI/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -792,7 +801,7 @@ http://vevo.ly/3HJiqd
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -801,6 +810,7 @@ http://vevo.ly/3HJiqd
         src="https://i.ytimg.com/vi/CkTVoLamPio/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -837,7 +847,7 @@ Each weekday morning, "CBS This Morning" co-hosts Gayle King, Anthony Mason and 
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -846,6 +856,7 @@ Each weekday morning, "CBS This Morning" co-hosts Gayle King, Anthony Mason and 
         src="https://i.ytimg.com/vi/ir1KIlOioSo/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -875,7 +886,7 @@ Not Minecraft, But Water Rises or Minecraft, But Lava Rises, or any other but ch
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -884,6 +895,7 @@ Not Minecraft, But Water Rises or Minecraft, But Lava Rises, or any other but ch
         src="https://i.ytimg.com/vi/qUUloBe5vEo/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -961,7 +973,7 @@ Pound it 👊🏻 Noggin 🙇🏻‍♂️
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -970,6 +982,7 @@ Pound it 👊🏻 Noggin 🙇🏻‍♂️
         src="https://i.ytimg.com/vi/VB_GWz25B3Q/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -1050,7 +1063,7 @@ Karthik Ramasamy, Vladan Lausevic, Glenn Green, Austin Millan, Wyton Chu, Gintar
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -1059,6 +1072,7 @@ Karthik Ramasamy, Vladan Lausevic, Glenn Green, Austin Millan, Wyton Chu, Gintar
         src="https://i.ytimg.com/vi/2lfBYyQ2xjo/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -1088,7 +1102,7 @@ https://www.paramountplus.com/shows/uefa-champions-league/
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -1097,6 +1111,7 @@ https://www.paramountplus.com/shows/uefa-champions-league/
         src="https://i.ytimg.com/vi/HgFzP5m1k_c/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -1160,7 +1175,7 @@ Key features:
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -1169,6 +1184,7 @@ Key features:
         src="https://i.ytimg.com/vi/eT6wYbaRrlQ/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -1191,7 +1207,7 @@ For an in-depth explanation of this channel:   https://www.kickstarter.com/proje
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -1200,6 +1216,7 @@ For an in-depth explanation of this channel:   https://www.kickstarter.com/proje
         src="https://i.ytimg.com/vi/mxnGGyH2_Is/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -1255,7 +1272,7 @@ Thank you for clicking on this video and for watching! I have more awesome video
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -1264,6 +1281,7 @@ Thank you for clicking on this video and for watching! I have more awesome video
         src="https://i.ytimg.com/vi/Ooga5KqtkMo/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -1284,7 +1302,7 @@ Thank you for clicking on this video and for watching! I have more awesome video
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -1293,6 +1311,7 @@ Thank you for clicking on this video and for watching! I have more awesome video
         src="https://i.ytimg.com/vi/K96S2qroRN4/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -1315,7 +1334,7 @@ For an in-depth explanation of this channel:   https://www.kickstarter.com/proje
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -1324,6 +1343,7 @@ For an in-depth explanation of this channel:   https://www.kickstarter.com/proje
         src="https://i.ytimg.com/vi/w0bU-l__BPs/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -1349,7 +1369,7 @@ Facebook: https://www.facebook.com/washingtonpost/
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -1358,6 +1378,7 @@ Facebook: https://www.facebook.com/washingtonpost/
         src="https://i.ytimg.com/vi/CaZ5LhUbFng/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -1396,7 +1417,7 @@ https://youtube.com/hollywoodreporter
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -1405,6 +1426,7 @@ https://youtube.com/hollywoodreporter
         src="https://i.ytimg.com/vi/kg16owoO1Dk/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -1468,7 +1490,7 @@ Pound it 👊🏻 Noggin 🙇🏻‍♂️
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -1477,6 +1499,7 @@ Pound it 👊🏻 Noggin 🙇🏻‍♂️
         src="https://i.ytimg.com/vi/HgYVuXaihNs/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -1502,7 +1525,7 @@ https://spoti.fi/32Hb2lz
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -1511,6 +1534,7 @@ https://spoti.fi/32Hb2lz
         src="https://i.ytimg.com/vi/UCjkpQNtEJc/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2
@@ -1538,7 +1562,7 @@ Follow POLITICO here:
       </div>
     </button>
     <button
-      aria-label="card-container"
+      aria-label="card-wrapper"
       class="c1"
     >
       <img
@@ -1547,6 +1571,7 @@ Follow POLITICO here:
         src="https://i.ytimg.com/vi/7dmB1_g1GN0/mqdefault.jpg"
       />
       <div
+        aria-label="card-container"
         class="c3"
       >
         <h2

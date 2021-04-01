@@ -2,6 +2,8 @@ import React from 'react';
 import { act, render } from '@testing-library/react';
 import 'jest-styled-components';
 import { ThemeProvider } from 'styled-components';
+import { Router } from 'react-router-dom';
+import { createMemoryHistory } from 'history';
 
 import Provider from '../../state/Provider';
 import Home from './Home.page';
@@ -24,8 +26,10 @@ jest.mock('../../services', () => {
 
 describe('Home Page', () => {
   let theme;
+  let history;
 
   beforeEach(() => {
+    history = createMemoryHistory();
     theme = {
       base: '#f0f',
       background: '#fff',
@@ -47,7 +51,9 @@ describe('Home Page', () => {
       wrapper = render(
         <ThemeProvider theme={theme}>
           <Provider>
-            <Home />
+            <Router history={history}>
+              <Home />
+            </Router>
           </Provider>
         </ThemeProvider>
       );
@@ -58,7 +64,9 @@ describe('Home Page', () => {
       fragment = wrapper.asFragment(
         <ThemeProvider>
           <Provider>
-            <Home />
+            <Router history={history}>
+              <Home />
+            </Router>
           </Provider>
         </ThemeProvider>
       );

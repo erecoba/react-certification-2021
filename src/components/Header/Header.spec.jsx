@@ -3,6 +3,8 @@ import { render, act, fireEvent } from '@testing-library/react';
 import 'jest-styled-components';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+import { createMemoryHistory } from 'history';
 
 import Provider from '../../state/Provider';
 import Header, { retrieveVideosEffect } from './Header';
@@ -27,10 +29,12 @@ jest.mock('../../services', () => {
 describe('Component - Header', () => {
   let theme;
   let props;
+  let history;
 
   const youtubeDispatch = jest.fn();
   beforeEach(() => {
     youtubeDispatch.mockReset();
+    history = createMemoryHistory();
     theme = {
       colors: {
         white: '#fff',
@@ -47,7 +51,9 @@ describe('Component - Header', () => {
       wrapper = render(
         <ThemeProvider theme={theme}>
           <Provider>
-            <Header {...props} />
+            <Router history={history}>
+              <Header {...props} />
+            </Router>
           </Provider>
         </ThemeProvider>
       );
@@ -58,7 +64,9 @@ describe('Component - Header', () => {
       fragment = wrapper.asFragment(
         <ThemeProvider theme={theme}>
           <Provider>
-            <Header {...props} />
+            <Router history={history}>
+              <Header {...props} />
+            </Router>
           </Provider>
         </ThemeProvider>
       );
@@ -101,7 +109,9 @@ describe('Component - Header', () => {
         <BrowserRouter>
           <ThemeProvider theme={theme}>
             <Provider>
-              <Header {...props} />
+              <Router history={history}>
+                <Header {...props} />
+              </Router>
             </Provider>
           </ThemeProvider>
         </BrowserRouter>
