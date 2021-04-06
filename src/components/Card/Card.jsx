@@ -26,7 +26,7 @@ const Card = ({
   linkBase = 'videos',
 }) => {
   const history = useHistory();
-  const [isShown, setIsShown] = useState(false);
+  const [isFavButtonShown, setIsFavButtonShown] = useState(false);
   const { sessionState } = useSession();
 
   const handleAddFavorite = () => {
