@@ -4,6 +4,8 @@ import 'jest-styled-components';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter } from 'react-router-dom';
 
+import Provider from '../../state/Provider';
+
 import Card from './Card';
 
 jest.mock('../../state/actions/youtube');
@@ -11,6 +13,7 @@ jest.mock('../../state/actions/youtube');
 describe('Avatar', () => {
   let props;
   let theme;
+  window.alert = jest.fn();
 
   beforeAll(() => {
     theme = {
@@ -80,5 +83,24 @@ describe('Avatar', () => {
 
     const button = wrapper.getByLabelText('card-container');
     expect(button).toHaveStyle('width: 100%');
+  });
+
+  it('should add a new video to favorite', () => {
+    props.canFavorite = true;
+    const wrapper = render(
+      <BrowserRouter>
+        <Provider>
+          <ThemeProvider theme={theme}>
+            <Card {...props} />
+          </ThemeProvider>
+        </Provider>
+      </BrowserRouter>
+    );
+
+    const cardWrapper = wrapper.getByLabelText('card-wrapper');
+    fireEvent.mouseEnter(cardWrapper);
+
+    const favButton = wrapper.getByLabelText('favorite-button');
+    fireEvent.click(favButton);
   });
 });

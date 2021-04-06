@@ -1,36 +1,37 @@
 import React, { useEffect, useLayoutEffect } from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route, useLocation } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import Provider, { useGeneral } from '../../state/Provider';
-import AuthProvider from '../../providers/Auth';
 import HomePage from '../../pages/Home';
 import LoginPage from '../../pages/Login';
 import NotFound from '../../pages/NotFound';
-import SecretPage from '../../pages/Secret';
 import VideoDetailPage from '../../pages/VideoDetail';
+import FavoritePage from '../../pages/Favorite';
+import FavoriteDetailPage from '../../pages/FavoriteDetail';
 import Private from '../Private';
-import Fortune from '../Fortune';
 import Layout from '../Layout';
 import { random } from '../../utils/fns';
 import theme from '../../ui/theme';
+import { clearLocal } from '../../utils/localstorage';
+
+export function rotateBackground(body) {
+  const xPercent = random(100);
+  const yPercent = random(100);
+  body.style.setProperty('--bg-position', `${xPercent}% ${yPercent}%`);
+}
 
 function App() {
   useLayoutEffect(() => {
     const { body } = document;
+    clearLocal();
 
-    function rotateBackground() {
-      const xPercent = random(100);
-      const yPercent = random(100);
-      body.style.setProperty('--bg-position', `${xPercent}% ${yPercent}%`);
-    }
-
-    const intervalId = setInterval(rotateBackground, 3000);
-    body.addEventListener('click', rotateBackground);
+    const intervalId = setInterval(() => rotateBackground(body), 3000);
+    body.addEventListener('click', () => rotateBackground(body));
 
     return () => {
       clearInterval(intervalId);
-      body.removeEventListener('click', rotateBackground);
+      body.removeEventListener('click', () => rotateBackground(body));
     };
   }, []);
 
@@ -38,6 +39,37 @@ function App() {
     <Provider>
       <ThemeApp />
     </Provider>
+  );
+}
+
+function Routing() {
+  const location = useLocation();
+  const background = location.state && location.state.background;
+
+  return (
+    <>
+      <Switch location={background || location}>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route exact path="/login">
+          <LoginPage />
+        </Route>
+        <Route exact path="/videos/:idVideo">
+          <VideoDetailPage />
+        </Route>
+        <Private exact path="/favorites">
+          <FavoritePage />
+        </Private>
+        <Private exact path="/favorites/:idVideo">
+          <FavoriteDetailPage />
+        </Private>
+        <Route path="*">
+          <NotFound />
+        </Route>
+      </Switch>
+      {background && <Route exact path="/login" component={LoginPage} />}
+    </>
   );
 }
 
@@ -51,30 +83,11 @@ function ThemeApp() {
 
   return (
     <ThemeProvider theme={theme[stateTheme]}>
-      <BrowserRouter>
-        <AuthProvider>
-          <Layout>
-            <Switch>
-              <Route exact path="/">
-                <HomePage />
-              </Route>
-              <Route exact path="/login">
-                <LoginPage />
-              </Route>
-              <Route exact path="/videos/:idVideo">
-                <VideoDetailPage />
-              </Route>
-              <Private exact path="/secret">
-                <SecretPage />
-              </Private>
-              <Route path="*">
-                <NotFound />
-              </Route>
-            </Switch>
-            <Fortune />
-          </Layout>
-        </AuthProvider>
-      </BrowserRouter>
+      <HashRouter>
+        <Layout>
+          <Routing />
+        </Layout>
+      </HashRouter>
     </ThemeProvider>
   );
 }

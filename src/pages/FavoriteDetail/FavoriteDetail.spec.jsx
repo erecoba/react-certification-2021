@@ -1,12 +1,13 @@
 import React from 'react';
-import { act, render } from '@testing-library/react';
+import { render, act } from '@testing-library/react';
 import 'jest-styled-components';
 import { ThemeProvider } from 'styled-components';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 
+import FavoriteDetailPage from './FavoriteDetail';
+
 import Provider from '../../state/Provider';
-import Home from './Home.page';
 
 import MockVideosPopular from '../../mocks/videos-popular.json';
 import MockVideosSearch from '../../mocks/videos-searching.json';
@@ -24,27 +25,24 @@ jest.mock('../../services', () => {
   }));
 });
 
-describe('Home Page', () => {
+describe('Pages - Favorite', () => {
   let theme;
+  let props;
   let history;
 
+  const youtubeDispatch = jest.fn();
   beforeEach(() => {
+    youtubeDispatch.mockReset();
     history = createMemoryHistory();
     theme = {
-      base: '#f0f',
-      background: '#fff',
-      label: '#000',
-
-      inputHoverBorder: '#f0f',
-      inputHoverBg: '#ff0',
-
       colors: {
         white: '#fff',
       },
     };
+    props = {};
   });
 
-  it('should render correctly Home', async () => {
+  it('should render Favorite page correctly', async () => {
     let wrapper;
 
     await act(async () => {
@@ -52,7 +50,7 @@ describe('Home Page', () => {
         <ThemeProvider theme={theme}>
           <Provider>
             <Router history={history}>
-              <Home />
+              <FavoriteDetailPage {...props} />
             </Router>
           </Provider>
         </ThemeProvider>
@@ -65,7 +63,7 @@ describe('Home Page', () => {
         <ThemeProvider>
           <Provider>
             <Router history={history}>
-              <Home />
+              <FavoriteDetailPage {...props} />
             </Router>
           </Provider>
         </ThemeProvider>

@@ -1,14 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-import StarIcon from '../../ui/icons/Star';
-import { FavoriteProcess } from '../../utils/favoriteProcess';
+import { getLocal } from '../../utils/localstorage';
+import { FAV_VIDEOS } from '../../utils/constants';
 import Header from '../../components/Header';
 import Card from '../../components/Card';
-import Avatar from '../../components/Avatar';
 
-import { useYoutubeVideo, useSession } from '../../state/Provider';
-import { youtubeRelatedVideos, youtubeDetailVideo } from '../../state/actions/youtube';
+import { useYoutubeVideo } from '../../state/Provider';
+import { youtubeDetailVideo } from '../../state/actions/youtube';
 
 import {
   Container,
@@ -22,23 +21,22 @@ import {
   DetailContainer,
   RankingContainer,
   LikesText,
-} from './VideoDetail.styled';
+} from './FavoriteDetail.styled';
 
 const VIDEO_EMBED_URL = 'https://www.youtube.com/embed/';
 
 export const updateVideoSelectionEffect = ({ idVideo, youtubeDispatch }) => {
   const fetch = async () => {
     youtubeDispatch(await youtubeDetailVideo(idVideo));
-    youtubeDispatch(await youtubeRelatedVideos(idVideo));
   };
   fetch();
 };
 
-const VideoDetail = () => {
+const FavoriteDetail = () => {
   const { idVideo } = useParams();
+  const [favoriteVideos] = useState(getLocal(FAV_VIDEOS));
   const { youtubeState, youtubeDispatch } = useYoutubeVideo();
-  const { detailVideo, relatedVideos } = youtubeState;
-  const { sessionState } = useSession();
+  const { detailVideo } = youtubeState;
 
   const originUrl = `${window.location.protocol}//${window.location.hostname}`;
 
@@ -46,23 +44,6 @@ const VideoDetail = () => {
     idVideo,
     youtubeDispatch,
   ]);
-
-  const handleFavoriteVideo = () => {
-    if (!sessionState.user) {
-      // eslint-disable-next-line no-alert
-      alert('Log in before to add a favorite video');
-      return;
-    }
-    const videoFavorite = new FavoriteProcess({
-      id: idVideo,
-      title: detailVideo.snippet.title,
-      description: detailVideo.snippet.description,
-      imgUrl: detailVideo.snippet.thumbnails.medium.url,
-      channelTitle: detailVideo.snippet.channelTitle,
-    });
-
-    videoFavorite.addOrRemoveVideo().updateLocalStorage().displayMessage();
-  };
 
   return (
     <>
@@ -76,22 +57,20 @@ const VideoDetail = () => {
             />
           </VideoContainer>
           <VideoRelalatedContaier>
-            <TitleMayInterestYou>Tal vez te interese...</TitleMayInterestYou>
-            {relatedVideos.map(
-              (relatedVideo) =>
-                relatedVideo.snippet && (
-                  <Card
-                    isFluid
-                    canFavorite
-                    key={relatedVideo.etag}
-                    id={relatedVideo.id.videoId}
-                    title={relatedVideo.snippet.title}
-                    description={relatedVideo.snippet.description}
-                    imgUrl={relatedVideo.snippet.thumbnails.medium.url}
-                    channelTitle={relatedVideo.snippet.channelTitle}
-                  />
-                )
-            )}
+            <TitleMayInterestYou>Tus favoritos...</TitleMayInterestYou>
+            {favoriteVideos &&
+              favoriteVideos.map((videoFavorite) => (
+                <Card
+                  isFluid
+                  key={videoFavorite.id}
+                  id={videoFavorite.id}
+                  title={videoFavorite.title}
+                  description={videoFavorite.description}
+                  imgUrl={videoFavorite.imgUrl}
+                  channelTitle={videoFavorite.channelTitle}
+                  linkBase="favorites"
+                />
+              ))}
           </VideoRelalatedContaier>
         </Wrapper>
         <DetailContainer>
@@ -106,11 +85,6 @@ const VideoDetail = () => {
             <LikesText>
               {detailVideo.statistics && detailVideo.statistics.dislikeCount} No me gusta
             </LikesText>
-            <LikesText>
-              <Avatar clickable onClick={handleFavoriteVideo}>
-                <StarIcon color="white" />
-              </Avatar>
-            </LikesText>
           </RankingContainer>
           <DescriptionVideo>
             {detailVideo.snippet &&
@@ -124,4 +98,4 @@ const VideoDetail = () => {
   );
 };
 
-export default VideoDetail;
+export default FavoriteDetail;

@@ -3,7 +3,7 @@ import { render, act } from '@testing-library/react';
 import 'jest-styled-components';
 
 import Provider from '../../state/Provider';
-import App from './App.component';
+import App, { rotateBackground } from './App.component';
 import MockVideosPopular from '../../mocks/videos-popular.json';
 import MockVideosSearch from '../../mocks/videos-searching.json';
 import MockVideosRelated from '../../mocks/videos-related.json';
@@ -41,5 +41,12 @@ describe('App', () => {
     });
 
     expect(fragment).toMatchSnapshot();
+  });
+
+  it('should change the value to a random text', () => {
+    const body = { style: { setProperty: jest.fn() } };
+    rotateBackground(body);
+
+    expect(body.style.setProperty).toBeCalledTimes(1);
   });
 });

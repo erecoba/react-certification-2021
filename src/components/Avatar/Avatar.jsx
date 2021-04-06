@@ -1,12 +1,23 @@
 import React from 'react';
-import { Container } from './Avatar.styled';
-import HappyFaceIcon from '../../ui/icons/HappyFace';
+import { useLocation } from 'react-router';
+import { Container, CustomLink, Image } from './Avatar.styled';
 
-const Avatar = ({ clickable }) => {
+const Avatar = ({ clickable, url, children, isLink, onClick }) => {
+  const location = useLocation();
   return (
-    <Container clickable={clickable}>
-      <HappyFaceIcon color="white" />
-    </Container>
+    <>
+      {isLink ? (
+        <CustomLink to={{ pathname: '/login', state: { background: location } }}>
+          <Container clickable={clickable}>
+            {url ? <Image src={url} alt="avatar" /> : children}
+          </Container>
+        </CustomLink>
+      ) : (
+        <Container clickable={clickable} onClick={onClick}>
+          {url ? <Image src={url} alt="avatar" /> : children}
+        </Container>
+      )}
+    </>
   );
 };
 

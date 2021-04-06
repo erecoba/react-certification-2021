@@ -15,6 +15,7 @@ function HomePage() {
       <Container>
         {videos.map((video) => (
           <Card
+            canFavorite
             key={video.id}
             id={typeof video.id === 'object' ? video.id.videoId : video.id}
             title={video.snippet.title}

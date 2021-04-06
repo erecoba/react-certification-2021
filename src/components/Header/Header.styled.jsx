@@ -256,6 +256,11 @@ const LabelCheckToggleFeat = styled.span`
         `};
 `;
 
+const LitteSpace = styled.div`
+  height: 1px;
+  width: ${({ size }) => size}px;
+`;
+
 export {
   Container,
   Logo,
@@ -267,4 +272,5 @@ export {
   CheckToggle,
   LabelCheckToggle,
   LabelCheckToggleFeat,
+  LitteSpace,
 };

@@ -76,4 +76,27 @@ const TagChannel = styled.div`
   color: #fff;
 `;
 
-export { Container, ImageFit, GradientContainer, Title, Description, TagChannel };
+const FavStar = styled.div`
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-radius: 30px;
+
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: ${({ theme }) => theme.base};
+  color: #fff;
+`;
+
+export {
+  Container,
+  ImageFit,
+  GradientContainer,
+  Title,
+  Description,
+  TagChannel,
+  FavStar,
+};

@@ -86,7 +86,7 @@ exports[`Avatar should render correctly inside button 1`] = `
 }
 
 <button
-    aria-label="card-container"
+    aria-label="card-wrapper"
     class="c0"
   >
     <img
@@ -95,6 +95,7 @@ exports[`Avatar should render correctly inside button 1`] = `
       src=""
     />
     <div
+      aria-label="card-container"
       class="c2"
     >
       <h2

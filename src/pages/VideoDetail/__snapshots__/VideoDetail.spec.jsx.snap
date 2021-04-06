@@ -2,7 +2,23 @@
 
 exports[`Pages - Video detail should render the component 1`] = `
 <DocumentFragment>
-  .c0 {
+  .c11 {
+  display: inline-block;
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #fff;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0 {
   position: fixed;
   top: 0;
   left: 0;
@@ -241,22 +257,6 @@ exports[`Pages - Video detail should render the component 1`] = `
   cursor: pointer;
 }
 
-.c11 {
-  display: inline-block;
-  color: #fff;
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: #fff;
-  font-size: 1.5rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-}
-
 <nav
     class="c0"
   >
@@ -298,51 +298,92 @@ exports[`Pages - Video detail should render the component 1`] = `
           />
         </label>
       </div>
-      <div
-        class="c10"
+      <a
+        class=""
+        href="/login"
       >
-        <svg
-          class="c11"
-          color="white"
-          focusable="false"
-          viewBox="0 0 24 24"
+        <div
+          class="c10"
         >
-          <path
-            d="M0 0h24v24H0V0z"
-            fill="none"
-          />
-          <path
-            d="M0 0h24v24H0V0z"
-            fill="none"
-          />
-          <circle
-            cx="15.5"
-            cy="9.5"
-            r="1.5"
-          />
-          <circle
-            cx="8.5"
-            cy="9.5"
-            r="1.5"
-          />
-          <circle
-            cx="15.5"
-            cy="9.5"
-            r="1.5"
-          />
-          <circle
-            cx="8.5"
-            cy="9.5"
-            r="1.5"
-          />
-          <path
-            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-2.5c2.33 0 4.32-1.45 5.12-3.5h-1.67c-.69 1.19-1.97 2-3.45 2s-2.75-.81-3.45-2H6.88c.8 2.05 2.79 3.5 5.12 3.5z"
-          />
-        </svg>
-      </div>
+          <svg
+            class="c11"
+            color="white"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+            <circle
+              cx="15.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <circle
+              cx="8.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <circle
+              cx="15.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <circle
+              cx="8.5"
+              cy="9.5"
+              r="1.5"
+            />
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm0-2.5c2.33 0 4.32-1.45 5.12-3.5h-1.67c-.69 1.19-1.97 2-3.45 2s-2.75-.81-3.45-2H6.88c.8 2.05 2.79 3.5 5.12 3.5z"
+            />
+          </svg>
+        </div>
+      </a>
     </div>
   </nav>
-  .c6 {
+  .c17 {
+  display: inline-block;
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #fff;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c16 {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #f0f;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.c6 {
   border-radius: 20px;
   border: 0;
   outline: 0;
@@ -491,7 +532,7 @@ exports[`Pages - Video detail should render the component 1`] = `
   font-weight: 700;
 }
 
-.c16 {
+.c18 {
   color: #000;
   font-size: 1rem;
   font-weight: 500;
@@ -552,7 +593,7 @@ exports[`Pages - Video detail should render the component 1`] = `
           Tal vez te interese...
         </span>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -561,6 +602,7 @@ exports[`Pages - Video detail should render the component 1`] = `
             src="https://i.ytimg.com/vi/KenzFW6SsFo/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -593,7 +635,7 @@ TWITTER: https://twitter.com/THETHIRDERNEST
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -602,6 +644,7 @@ TWITTER: https://twitter.com/THETHIRDERNEST
             src="https://i.ytimg.com/vi/wohkCHvsIVc/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -639,7 +682,7 @@ This is a Sad Song by Eminem and NF.
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -648,6 +691,7 @@ This is a Sad Song by Eminem and NF.
             src="https://i.ytimg.com/vi/Hzib-n4hi5o/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -697,7 +741,7 @@ RAPPER REACTS to NF - LOST ft. Hopsin
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -706,6 +750,7 @@ RAPPER REACTS to NF - LOST ft. Hopsin
             src="https://i.ytimg.com/vi/Ykg0fzAC2S4/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -780,7 +825,7 @@ Knox Hill
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -789,6 +834,7 @@ Knox Hill
             src="https://i.ytimg.com/vi/adLGHcj_fmA/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -958,7 +1004,7 @@ The official YouTube channel of Atlantic Records artist Bruno Mars. 11x GRAMMY A
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -967,6 +1013,7 @@ The official YouTube channel of Atlantic Records artist Bruno Mars. 11x GRAMMY A
             src="https://i.ytimg.com/vi/QBsA2ETp7JA/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -999,7 +1046,7 @@ http://www.myfunkvolume.com
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -1008,6 +1055,7 @@ http://www.myfunkvolume.com
             src="https://i.ytimg.com/vi/ktEoXtQEtqA/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -1041,7 +1089,7 @@ What reaction do you want to see next? Comment down below!
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -1050,6 +1098,7 @@ What reaction do you want to see next? Comment down below!
             src="https://i.ytimg.com/vi/33TEU3kQBOo/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -1094,7 +1143,7 @@ Directed by Edgar Esteves
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -1103,6 +1152,7 @@ Directed by Edgar Esteves
             src="https://i.ytimg.com/vi/pg17kp1s83U/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -1127,7 +1177,7 @@ https://www.facebook.com/blal.ashraf.33
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -1136,6 +1186,7 @@ https://www.facebook.com/blal.ashraf.33
             src="https://i.ytimg.com/vi/qOT60LuYHmA/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -1163,7 +1214,7 @@ Website: http://www.undercoverprodigy.com
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -1172,6 +1223,7 @@ Website: http://www.undercoverprodigy.com
             src="https://i.ytimg.com/vi/2pJZ3bFbaCQ/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -1211,7 +1263,7 @@ Website: http://www.undercoverprodigy.com
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -1220,6 +1272,7 @@ Website: http://www.undercoverprodigy.com
             src="https://i.ytimg.com/vi/1AeQjMZiYoE/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -1252,7 +1305,7 @@ Website: http://www.undercoverprodigy.com
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -1261,6 +1314,7 @@ Website: http://www.undercoverprodigy.com
             src="https://i.ytimg.com/vi/zYE17Wlep80/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -1364,7 +1418,7 @@ College Kids React #53 - COLLEGE KIDS REACT TO NF
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -1373,6 +1427,7 @@ College Kids React #53 - COLLEGE KIDS REACT TO NF
             src="https://i.ytimg.com/vi/ztIyOjUPAzA/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -1415,7 +1470,7 @@ I believe all content used falls under the remits of Fair Use, but if any conten
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -1424,6 +1479,7 @@ I believe all content used falls under the remits of Fair Use, but if any conten
             src="https://i.ytimg.com/vi/4F1oF7Nr5do/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -1498,7 +1554,7 @@ Knox Hill
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -1507,6 +1563,7 @@ Knox Hill
             src="https://i.ytimg.com/vi/ibWdgkv1LSA/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -1528,7 +1585,7 @@ I CLAIM NO RIGHTS TO THIS SONG.
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -1537,6 +1594,7 @@ I CLAIM NO RIGHTS TO THIS SONG.
             src="https://i.ytimg.com/vi/Y7pteqWRYu4/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -1575,7 +1633,7 @@ Website: http://www.undercoverprodigy.com
           </div>
         </button>
         <button
-          aria-label="card-container"
+          aria-label="card-wrapper"
           class="c6"
         >
           <img
@@ -1584,6 +1642,7 @@ Website: http://www.undercoverprodigy.com
             src="https://i.ytimg.com/vi/EIx39N5DVm8/mqdefault.jpg"
           />
           <div
+            aria-label="card-container"
             class="c8"
           >
             <h2
@@ -1647,9 +1706,31 @@ FAIR USE:
         >
           13420 No me gusta
         </span>
+        <span
+          class="c15"
+        >
+          <div
+            class="c16"
+          >
+            <svg
+              class="c17"
+              color="white"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+              />
+            </svg>
+          </div>
+        </span>
       </div>
       <div
-        class="c16"
+        class="c18"
       >
         <p>
           Following the Duke and Duchess of Sussex’s landmark interview with Oprah Winfrey, today’s Good Morning Britain shared the reaction to the revelations, including those about Meghan’s suicidal thoughts and allegations of racism within the Royal family.
